@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Максим Солус](https://up.htmlacademy.ru/htmlcss/29/user/1483111).
-* Наставник: `Неизвестно`.
+* Наставник: [Алёна Сиприкова](https://htmlacademy.ru/profile/asiprikova).
 
 ---
 
