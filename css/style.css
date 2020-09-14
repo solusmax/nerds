@@ -1,5 +1,7 @@
 /**************************/
-/*         ШРИФТЫ         */
+/***                    ***/
+/**        ШРИФТЫ        **/
+/***                    ***/
 /**************************/
 
 @font-face {
@@ -33,7 +35,9 @@
 }
 
 /**************************/
-/*     visually-hidden    */
+/***                    ***/
+/**    VISUALLY-HIDDEN   **/
+/***                    ***/
 /**************************/
 
 .visually-hidden:not(:focus):not(:active) {
@@ -48,4 +52,25 @@
   clip: rect(1px, 1px, 1px, 1px);
   clip-path: inset(100%);
   white-space: nowrap;
+}
+
+/**************************/
+/***                    ***/
+/**      ПЕРЕМЕННЫЕ      **/
+/***                    ***/
+/**************************/
+
+:root {
+  --basic-black: #000000;
+  --basic-black-light: #283136;
+  --basic-black-lighten: #444444;
+  --basic-gray-darken: #4d4d4d;
+  --basic-gray-dark: #666666;
+  --basic-gray: #a6a6a6;
+  --basif-gray-light: #e1e1e1;
+  --basic-gray-lighten: #eeeeee;
+  --basic-green: #00ca74;
+  --basic-red: #fb5659;
+  --basic-white: #ffffff;
+  --basic-yellow: #efc849;
 }
