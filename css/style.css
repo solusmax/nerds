@@ -85,3 +85,17 @@
   --special-gray-lighten: #eeeeee;
   --special-gray-shadowy: #dfdfdf;
 }
+
+/**************************/
+/***                    ***/
+/**         PAGE         **/
+/***                    ***/
+/**************************/
+
+.page__body {
+  min-width: 1200px;
+
+  font-family: "Roboto", Arial, sans-serif;
+
+  background-color: var(--basic-white);
+}
