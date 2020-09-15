@@ -97,6 +97,9 @@
   min-width: 1200px;
 
   font-family: "Roboto", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--basic-black);
 
   background-color: var(--basic-white);
 }
@@ -110,7 +113,6 @@
 .button {
   font-family: inherit;
   font-weight: 500;
-  font-size: 16px;
   line-height: 18px;
   color: var(--basic-white);
   text-transform: uppercase;
@@ -178,10 +180,9 @@
 }
 
 .header__link {
-  font-size: 16px;
   font-weight: 500;
   line-height: 30px;
-  color: var(--basic-black);
+  color: inherit;
   text-decoration: none;
   text-transform: uppercase;
 }
@@ -191,7 +192,7 @@
 }
 
 .header__link:active {
-  color: var(--basic-black);
+  color: inherit;
 
   opacity: 0.3;
 }
@@ -224,13 +225,10 @@
   font-size: 55px;
   font-weight: 500;
   line-height: 1;
-  color: var(--basic-black);
 }
 
 .promo__description {
-  font-size: 16px;
   font-weight: 400;
-  line-height: 24px;
   color: var(--basic-black-light);
 }
 
@@ -255,13 +253,10 @@
   font-size: 24px;
   font-weight: 700;
   line-height: 30px;
-  color: var(--basic-black);
   text-transform: uppercase;
 }
 
 .services__description {
-  font-size: 16px;
-  line-height: 24px;
   color: var(--basic-black-light);
 }
 
@@ -279,20 +274,15 @@
   font-size: 45px;
   font-weight: 500;
   line-height: 1;
-  color: var(--basic-black);
 }
 
 .about__description {
-  font-size: 16px;
   font-weight: 400;
-  line-height: 24px;
   color: var(--basic-black-light);
 }
 
 .about__list-title {
-  font-size: 16px;
   font-weight: 700;
-  line-height: 24px;
   color: var(--basic-black-light);
   text-transform: uppercase;
 }
@@ -306,21 +296,15 @@
 }
 
 .about__item {
-  font-size: 16px;
   font-weight: 400;
-  line-height: 24px;
 }
 
 .about__features {
-  font-size: 16px;
   font-weight: 700;
-  line-height: 24px;
-  color: var(--basic-black);
   text-transform: uppercase;
 }
 
 .about__property {
-  font-size: 16px;
   font-weight: 400;
   line-height: 18px;
   color: var(--basic-black-light);
@@ -332,7 +316,6 @@
   font-size: 45px;
   font-weight: 700;
   line-height: 64px;
-  color: var(--basic-black);
 }
 
 .about__percentage {
@@ -371,12 +354,10 @@
   font-size: 18px;
   font-weight: 700;
   line-height: 30px;
-  color: var(--basic-black);
   text-transform: uppercase;
 }
 
 .contacts__address {
-  font-size: 16px;
   font-weight: 400;
   font-style: normal;
   line-height: 18px;
@@ -408,7 +389,6 @@
 }
 
 .socials__discount {
-  font-size: 16px;
   font-weight: 400;
   line-height: 22px;
 }
