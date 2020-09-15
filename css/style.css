@@ -62,6 +62,7 @@
 
 :root {
   --basic-black: #000000;
+  --basic-black-light: #283136;
   --basic-green: #00ca74;
   --basic-green-dark: #00bc6c;
   --basic-green-darken: #00aa62;
@@ -69,12 +70,12 @@
   --basic-red-dark: #e74246;
   --basic-red-darken: #d7373b;
   --basic-white: #ffffff;
+  --basic-white-opacity: rgba(255, 255, 255, 0.3);
   --basic-yellow: #efc84a;
   --basic-yellow-dark: #eab534;
   --basic-yellow-darken: #e5a722;
 
   --special-black-bright: #231f20;
-  --special-black-light: #283136;
   --special-black-lighten: #444444;
   --special-gray: #a6a6a6;
   --special-gray-dark: #666666;
@@ -95,9 +96,61 @@
 .page__body {
   min-width: 1200px;
 
-  font-family: "Roboto", Arial, sans-serif;
+  font-family: "Roboto", "Arial", sans-serif;
 
   background-color: var(--basic-white);
+}
+
+/**************************/
+/***                    ***/
+/**        BUTTON        **/
+/***                    ***/
+/**************************/
+
+.button {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--basic-white);
+  text-transform: uppercase;
+  text-decoration: none;
+
+  background-color: var(--basic-red);
+}
+
+.button:hover {
+  background-color: var(--basic-red-dark);
+}
+
+.button:active {
+  color: var(--basic-white-opacity);
+
+  background-color: var(--basic-red-darken);
+}
+
+.button--green {
+  background-color: var(--basic-green);
+}
+
+.button--green:hover {
+  background-color: var(--basic-green-dark);
+}
+
+.button--green:active {
+  background-color: var(--basic-green-darken);
+}
+
+.button--yellow {
+  background-color: var(--basic-yellow);
+}
+
+.button--yellow:hover {
+  background-color: var(--basic-yellow-dark);
+}
+
+.button--yellow:active {
+  background-color: var(--basic-yellow-darken);
 }
 
 /**************************/
@@ -141,4 +194,237 @@
   color: var(--basic-black);
 
   opacity: 0.3;
+}
+
+/**************************/
+/***                    ***/
+/**        PROMO         **/
+/***                    ***/
+/**************************/
+
+.promo {
+  background-color: var(--special-gray-lighten);
+}
+
+.promo__slider {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.promo__pagination {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.promo__headline {
+  font-size: 55px;
+  font-weight: 500;
+  line-height: 1;
+  color: var(--basic-black);
+}
+
+.promo__description {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: var(--basic-black-light);
+}
+
+/**************************/
+/***                    ***/
+/**       SERVICES       **/
+/***                    ***/
+/**************************/
+
+.services {
+  background-color: var(--basic-white);
+}
+
+.services__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.services__caption {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+  color: var(--basic-black);
+  text-transform: uppercase;
+}
+
+.services__description {
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--basic-black-light);
+}
+
+/**************************/
+/***                    ***/
+/**        ABOUT         **/
+/***                    ***/
+/**************************/
+
+.about {
+  background-color: var(--basic-white);
+}
+
+.about__headline {
+  font-size: 45px;
+  font-weight: 500;
+  line-height: 1;
+  color: var(--basic-black);
+}
+
+.about__description {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: var(--basic-black-light);
+}
+
+.about__list-title {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  color: var(--basic-black-light);
+  text-transform: uppercase;
+}
+
+.about__list {
+  margin: 0;
+  padding: 0;
+
+  color: var(--basic-black-light);
+  list-style: none;
+}
+
+.about__item {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.about__features {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  color: var(--basic-black);
+  text-transform: uppercase;
+}
+
+.about__property {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  color: var(--basic-black-light);
+}
+
+.about__value {
+  margin: 0;
+
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 64px;
+  color: var(--basic-black);
+}
+
+.about__percentage {
+  font-size: 26px;
+  line-height: 40px;
+}
+
+/**************************/
+/***                    ***/
+/**       PARTNERS       **/
+/***                    ***/
+/**************************/
+
+.partners {
+  background-color: var(--basic-white);
+}
+
+.partners__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+/**************************/
+/***                    ***/
+/**       CONTACTS       **/
+/***                    ***/
+/**************************/
+
+.contacts {
+  background-color: var(--basic-white);
+}
+
+.contacts__title {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+  color: var(--basic-black);
+  text-transform: uppercase;
+}
+
+.contacts__address {
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 18px;
+  color: var(--special-gray-dark);
+}
+
+.contacts__phone {
+  color: inherit;
+  text-decoration: none;
+}
+
+/**************************/
+/***                    ***/
+/**       SOCIALS        **/
+/***                    ***/
+/**************************/
+
+.socials__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.socials__tagline {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 36px;
+}
+
+.socials__discount {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+/**************************/
+/***                    ***/
+/**        MODAL         **/
+/***                    ***/
+/**************************/
+
+.modal {
+  background-color: var(--basic-white);
+}
+
+.modal__title {
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 53px;
 }
