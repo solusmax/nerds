@@ -99,3 +99,46 @@
 
   background-color: var(--basic-white);
 }
+
+/**************************/
+/***                    ***/
+/**        HEADER        **/
+/***                    ***/
+/**************************/
+
+.header {
+  background-color: var(--special-gray-lighten);
+}
+
+.header__menu {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.header__user-nav {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.header__link {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 30px;
+  color: var(--basic-black);
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.header__link:hover {
+  color: var(--basic-red);
+}
+
+.header__link:active {
+  color: var(--basic-black);
+
+  opacity: 0.3;
+}
