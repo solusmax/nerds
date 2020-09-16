@@ -1,0 +1,403 @@
+/**************************/
+/***                    ***/
+/**        ШРИФТЫ        **/
+/***                    ***/
+/**************************/
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Roboto"), local("Roboto Regular"), local("Roboto-Regular"),
+    url("../fonts/roboto.woff2") format("woff2"),
+    url("../fonts/roboto.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: local("Roboto Medium"), local("Roboto-Medium"),
+    url("../fonts/robotomedium.woff2") format("woff2"),
+    url("../fonts/robotomedium.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local("Roboto Bold"), local("Roboto-Bold"),
+    url("../fonts/robotobold.woff2") format("woff2"),
+    url("../fonts/robotobold.woff") format("woff");
+}
+
+/**************************/
+/***                    ***/
+/**    VISUALLY-HIDDEN   **/
+/***                    ***/
+/**************************/
+
+.visually-hidden {
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(100%);
+  white-space: nowrap;
+}
+
+/**************************/
+/***                    ***/
+/**      ПЕРЕМЕННЫЕ      **/
+/***                    ***/
+/**************************/
+
+:root {
+  --basic-black: #000000;
+  --basic-black-light: #283136;
+  --basic-green: #00ca74;
+  --basic-green-dark: #00bc6c;
+  --basic-green-darken: #00aa62;
+  --basic-red: #fb565a;
+  --basic-red-dark: #e74246;
+  --basic-red-darken: #d7373b;
+  --basic-white: #ffffff;
+  --basic-white-opacity: rgba(255, 255, 255, 0.3);
+  --basic-yellow: #efc84a;
+  --basic-yellow-dark: #eab534;
+  --basic-yellow-darken: #e5a722;
+
+  --special-black-bright: #231f20;
+  --special-black-lighten: #444444;
+  --special-gray: #a6a6a6;
+  --special-gray-dark: #666666;
+  --special-gray-darken: #4d4d4d;
+  --special-gray-dim: #d5d5d5;
+  --special-gray-foggy: #dbdbdb;
+  --special-gray-light: #e1e1e1;
+  --special-gray-lighten: #eeeeee;
+  --special-gray-shadowy: #dfdfdf;
+}
+
+/**************************/
+/***                    ***/
+/**         PAGE         **/
+/***                    ***/
+/**************************/
+
+.page__body {
+  min-width: 1200px;
+
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: var(--basic-black);
+
+  background-color: var(--basic-white);
+}
+
+/**************************/
+/***                    ***/
+/**        BUTTON        **/
+/***                    ***/
+/**************************/
+
+.button {
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 18px;
+  color: var(--basic-white);
+  text-transform: uppercase;
+  text-decoration: none;
+
+  background-color: var(--basic-red);
+}
+
+.button:hover {
+  background-color: var(--basic-red-dark);
+}
+
+.button:active {
+  color: var(--basic-white-opacity);
+
+  background-color: var(--basic-red-darken);
+  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+}
+
+.button--green {
+  background-color: var(--basic-green);
+}
+
+.button--green:hover {
+  background-color: var(--basic-green-dark);
+}
+
+.button--green:active {
+  background-color: var(--basic-green-darken);
+}
+
+.button--yellow {
+  background-color: var(--basic-yellow);
+}
+
+.button--yellow:hover {
+  background-color: var(--basic-yellow-dark);
+}
+
+.button--yellow:active {
+  background-color: var(--basic-yellow-darken);
+}
+
+/**************************/
+/***                    ***/
+/**        HEADER        **/
+/***                    ***/
+/**************************/
+
+.header {
+  background-color: var(--special-gray-lighten);
+}
+
+.header__menu {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.header__user-nav {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.header__link {
+  font-weight: 500;
+  line-height: 30px;
+  color: inherit;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.header__link:hover {
+  color: var(--basic-red);
+}
+
+.header__link:active {
+  color: inherit;
+
+  opacity: 0.3;
+}
+
+/**************************/
+/***                    ***/
+/**        PROMO         **/
+/***                    ***/
+/**************************/
+
+.promo {
+  background-color: var(--special-gray-lighten);
+}
+
+.promo__slider {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.promo__pagination {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.promo__headline {
+  font-size: 55px;
+  font-weight: 500;
+  line-height: 1;
+}
+
+.promo__description {
+  color: var(--basic-black-light);
+}
+
+/**************************/
+/***                    ***/
+/**       SERVICES       **/
+/***                    ***/
+/**************************/
+
+.services {
+  background-color: var(--basic-white);
+}
+
+.services__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.services__caption {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.services__description {
+  color: var(--basic-black-light);
+}
+
+/**************************/
+/***                    ***/
+/**        ABOUT         **/
+/***                    ***/
+/**************************/
+
+.about {
+  background-color: var(--basic-white);
+}
+
+.about__headline {
+  font-size: 45px;
+  font-weight: 500;
+  line-height: 1;
+}
+
+.about__description {
+  color: var(--basic-black-light);
+}
+
+.about__list-title {
+  font-weight: 700;
+  color: var(--basic-black-light);
+  text-transform: uppercase;
+}
+
+.about__list {
+  margin: 0;
+  padding: 0;
+
+  color: var(--basic-black-light);
+  list-style: none;
+}
+
+.about__features {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.about__property {
+  line-height: 18px;
+  color: var(--basic-black-light);
+}
+
+.about__value {
+  margin: 0;
+
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 64px;
+}
+
+.about__percentage {
+  font-size: 26px;
+  line-height: 40px;
+}
+
+/**************************/
+/***                    ***/
+/**       PARTNERS       **/
+/***                    ***/
+/**************************/
+
+.partners {
+  background-color: var(--basic-white);
+}
+
+.partners__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+/**************************/
+/***                    ***/
+/**       CONTACTS       **/
+/***                    ***/
+/**************************/
+
+.contacts {
+  background-color: var(--basic-white);
+}
+
+.contacts__title {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.contacts__address {
+  font-style: normal;
+  line-height: 18px;
+  color: var(--special-gray-dark);
+}
+
+.contacts__phone {
+  color: inherit;
+  text-decoration: none;
+}
+
+/**************************/
+/***                    ***/
+/**       SOCIALS        **/
+/***                    ***/
+/**************************/
+
+.socials__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.socials__tagline {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 36px;
+}
+
+.socials__discount {
+  line-height: 22px;
+}
+
+/**************************/
+/***                    ***/
+/**        MODAL         **/
+/***                    ***/
+/**************************/
+
+.modal {
+  background-color: var(--basic-white);
+}
+
+.modal__title {
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 53px;
+}
