@@ -107,6 +107,13 @@
   background-color: var(--basic-white);
 }
 
+.page__title {
+  font-size: 55px;
+  font-weight: 500;
+  line-height: 55px;
+  text-align: center;
+}
+
 /**************************/
 /***                    ***/
 /**        BUTTON        **/
