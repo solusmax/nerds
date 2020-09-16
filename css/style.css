@@ -511,16 +511,22 @@
   margin: 0;
   padding: 0;
 
-  text-align: center;
-
   list-style: none;
 }
 
-.templates__item {
+/**************************/
+/***                    ***/
+/**         CARD         **/
+/***                    ***/
+/**************************/
+
+.card {
+  text-align: center;
+
   background-color: var(--basic-grey);
 }
 
-.templates__title-link {
+.card__title-link {
   font-weight: 700;
   font-size: 18px;
   line-height: 30px;
@@ -529,19 +535,19 @@
   text-decoration: none;
 }
 
-.templates__title-link:hover {
+.card__title-link:hover {
   color: var(--basic-red);
 }
 
-.templates__title-link:active {
+.card__title-link:active {
   color: var(--basic-black-opacity-0-3);
 }
 
-.templates__title {
+.card__title {
   font-size: inherit;
 }
 
-.templates__description {
+.card__description {
   line-height: 18px;
   color: var(--special-grey-dark);
 }
