@@ -388,6 +388,29 @@
 
 /**************************/
 /***                    ***/
+/**       NOT-FOUND      **/
+/***                    ***/
+/**************************/
+
+.not-found {
+  background-color: var(--basic-white);
+  text-align: center;
+}
+
+.not-found__title {
+  font-size: 55px;
+  font-weight: 500;
+  line-height: 55px;
+}
+
+.not-found__description {
+  font-size: 18px;
+  line-height: 24px;
+  color: var(--basic-black-light);
+}
+
+/**************************/
+/***                    ***/
 /**        MODAL         **/
 /***                    ***/
 /**************************/
