@@ -62,8 +62,8 @@
 
 :root {
   --basic-black: #000000;
-  --basic-black-opacity-0-3: rgba(0, 0, 0, 0.3);
-  --basic-black-opacity-0-6: rgba(0, 0, 0, 0.6);
+  --basic-black-opacity-30: rgba(0, 0, 0, 0.3);
+  --basic-black-opacity-60: rgba(0, 0, 0, 0.6);
   --basic-black-light: #283136;
   --basic-green: #00ca74;
   --basic-green-dark: #00bc6c;
@@ -73,7 +73,7 @@
   --basic-red-dark: #e74246;
   --basic-red-darken: #d7373b;
   --basic-white: #ffffff;
-  --basic-white-opacity-0-3: rgba(255, 255, 255, 0.3);
+  --basic-white-opacity-30: rgba(255, 255, 255, 0.3);
   --basic-yellow: #efc84a;
   --basic-yellow-dark: #eab534;
   --basic-yellow-darken: #e5a722;
@@ -139,7 +139,7 @@
 }
 
 .button:active {
-  color: var(--basic-white-opacity-0-3);
+  color: var(--basic-white-opacity-30);
 
   background-color: var(--basic-red-darken);
   box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
@@ -182,7 +182,7 @@
 }
 
 .button--grey:active {
-  color: var(--basic-black-opacity-0-3);
+  color: var(--basic-black-opacity-30);
 
   background-color: var(--special-grey-dim);
 }
@@ -245,7 +245,7 @@
 }
 
 .header__link:active {
-  color: var(--basic-black-opacity-0-3);
+  color: var(--basic-black-opacity-30);
 }
 
 .header__link--current:hover {
@@ -477,12 +477,12 @@
 .sort__by-link {
   font-size: 14px;
   line-height: 18px;
-  color: var(--basic-black-opacity-0-3);
+  color: var(--basic-black-opacity-30);
   text-decoration: none;
 }
 
 .sort__by-link:hover {
-  color: var(--basic-black-opacity-0-6);
+  color: var(--basic-black-opacity-60);
 }
 
 .sort__by-link:active {
@@ -540,7 +540,7 @@
 }
 
 .card__title-link:active {
-  color: var(--basic-black-opacity-0-3);
+  color: var(--basic-black-opacity-30);
 }
 
 .card__title {
