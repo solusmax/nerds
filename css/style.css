@@ -87,6 +87,10 @@
   --special-grey-foggy: #dbdbdb;
   --special-grey-light: #e1e1e1;
   --special-grey-shadowy: #dfdfdf;
+
+  --button-background-color: var(--basic-red);
+  --button-border-color: var(--basic-red-dark);
+  --button-color: var(--basic-white);
 }
 
 /**************************/
@@ -121,91 +125,95 @@
 /**************************/
 
 .button {
+  border-color: var(--button-border-color);
   border-radius: 3px;
 
   font-family: inherit;
   font-weight: 500;
   line-height: 18px;
-  color: var(--basic-white);
+  color: var(--button-color);
   text-transform: uppercase;
   text-decoration: none;
   text-align: center;
 
-  background-color: var(--basic-red);
+  background-color: var(--button-background-color);
 }
 
 .button:hover {
-  background-color: var(--basic-red-dark);
+  --button-background-color: var(--basic-red-dark);
 }
 
 .button:active {
-  color: var(--basic-white-opacity-30);
+  --button-background-color: var(--basic-red-darken);
+  --button-color: var(--basic-white-opacity-30);
 
-  background-color: var(--basic-red-darken);
   box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
 }
 
 .button--green {
-  background-color: var(--basic-green);
+  --button-background-color: var(--basic-green);
+  --button-border-color: var(--basic-green-dark);
 }
 
 .button--green:hover {
-  background-color: var(--basic-green-dark);
+  --button-background-color: var(--basic-green-dark);
 }
 
 .button--green:active {
-  background-color: var(--basic-green-darken);
+  --button-background-color: var(--basic-green-darken);
 }
 
 .button--yellow {
-  background-color: var(--basic-yellow);
+  --button-background-color: var(--basic-yellow);
+  --button-border-color: var(--basic-yellow-dark);
 }
 
 .button--yellow:hover {
-  background-color: var(--basic-yellow-dark);
+  --button-background-color: var(--basic-yellow-dark);
 }
 
 .button--yellow:active {
-  background-color: var(--basic-yellow-darken);
+  --button-background-color: var(--basic-yellow-darken);
 }
 
 .button--grey {
-  color: inherit;
-
-  background-color: var(--basic-grey);
+  --button-background-color: var(--basic-grey);
+  --button-border-color: var(--special-grey-foggy);
+  --button-color: var(--basic-black);
 }
 
 .button--grey:hover {
-  color: inherit;
-
-  background-color: var(--special-grey-shadowy);
+  --button-background-color: var(--special-grey-shadowy);
+  --button-color: var(--basic-black);
 }
 
 .button--grey:active {
-  color: var(--basic-black-opacity-30);
-
-  background-color: var(--special-grey-dim);
+  --button-background-color: var(--special-grey-dim);
+  --button-color: var(--basic-black-opacity-30);
 }
 
-.button--grey-current {
-  border: 3px solid var(--special-grey-foggy);
+.button--current {
+  --button-background-color: var(--basic-white);
+  --button-color: var(--basic-black);
 
-  background-color: var(--basic-white);
+  border-width: 3px;
+  border-style: solid;
 }
 
-.button--grey-current:hover {
-  background-color: var(--basic-white);
+.button--current:hover {
+  --button-background-color: var(--basic-white);
+  --button-color: var(--basic-black);
 }
 
-.button--grey-current:active {
-  color: inherit;
+.button--current:active {
+  --button-background-color: var(--basic-white);
+  --button-color: var(--basic-black);
 
-  background-color: var(--basic-white);
   box-shadow: none;
 }
 
 .button--text-white:active {
-  color: var(--basic-white);
+  --button-color: var(--basic-white);
 }
 
 /**************************/
