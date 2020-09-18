@@ -256,6 +256,10 @@
   color: var(--basic-black-opacity-30);
 }
 
+.header__link--current {
+  border-bottom: solid 2px var(--basic-red);
+}
+
 .header__link--current:hover {
   color: inherit;
 }
