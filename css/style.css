@@ -231,9 +231,23 @@
   background-color: var(--basic-grey);
 }
 
+.header__wrapper {
+  display: grid;
+  grid-template-columns: 1fr min-content;
+  width: 1160px;
+  margin: 0 auto;
+  padding: 49px 20px 0;
+}
+
+.header__nav {
+  display: grid;
+  grid-template-columns: min-content 1fr;
+}
+
 .header__menu {
   margin: 0;
   padding: 0;
+  padding-top: 26px;
 
   list-style: none;
 }
@@ -241,6 +255,7 @@
 .header__user-nav {
   margin: 0;
   padding: 0;
+  padding-top: 26px;
 
   list-style: none;
 }
@@ -273,6 +288,11 @@
   color: inherit;
 }
 
+.header__logo {
+  margin: 0;
+  padding: 0;
+}
+
 /**************************/
 /***                    ***/
 /**        PROMO         **/
@@ -298,6 +318,9 @@
 }
 
 .promo__headline {
+  margin: 0;
+  padding: 0;
+
   font-size: 55px;
   font-weight: 500;
   line-height: 1;
