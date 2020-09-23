@@ -306,6 +306,7 @@
 .promo__wrapper {
   width: 1160px;
   margin: 0 auto;
+  padding-bottom: 80px;
 }
 
 .promo__slider {
