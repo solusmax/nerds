@@ -609,6 +609,14 @@
   filter: opacity(0.2);
 }
 
+.partners__logo:hover {
+  filter: opacity(1);
+}
+
+.partners__logo:active {
+  filter: opacity(0.1);
+}
+
 /**************************/
 /***                    ***/
 /**       CONTACTS       **/
