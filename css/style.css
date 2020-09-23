@@ -303,6 +303,11 @@
   background-color: var(--basic-grey);
 }
 
+.promo__wrapper {
+  width: 1160px;
+  margin: 0 auto;
+}
+
 .promo__slider {
   margin: 0;
   padding: 0;
@@ -318,7 +323,9 @@
 }
 
 .promo__headline {
+  width: 540px;
   margin: 0;
+  margin-bottom: 26px;
   padding: 0;
 
   font-size: 55px;
@@ -327,7 +334,15 @@
 }
 
 .promo__description {
+  width: 430px;
+  margin: 0;
+  margin-bottom: 38px;
+  padding: 0;
   color: var(--basic-black-light);
+}
+
+.promo__more {
+  width: 240px;
 }
 
 /**************************/
