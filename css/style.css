@@ -118,6 +118,28 @@
   text-align: center;
 }
 
+.page__services,
+.page__about,
+.page__partners {
+  position: relative;
+}
+
+.page__services::before,
+.page__about::before,
+.page__partners::before {
+  content: "";
+
+  position: absolute;
+  left: 1px;
+  bottom: -2px;
+  z-index: 1;
+
+  width: 1158px;
+  height: 2px;
+
+  background-color: var(--basic-grey);
+}
+
 /**************************/
 /***                    ***/
 /**        BUTTON        **/
