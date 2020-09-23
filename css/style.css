@@ -339,6 +339,7 @@
   margin: 0;
   margin-bottom: 38px;
   padding: 0;
+
   color: var(--basic-black-light);
 }
 
@@ -354,10 +355,11 @@
 /**************************/
 
 .services {
-  background-color: var(--basic-white);
   width: 1160px;
   margin: 0 auto;
   padding: 80px 0;
+
+  background-color: var(--basic-white);
 }
 
 .services__list {
