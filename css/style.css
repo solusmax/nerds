@@ -149,6 +149,7 @@
 
 .button {
   display: inline-block;
+  vertical-align: baseline;
   box-sizing: border-box;
   min-height: 50px;
   margin: 0;
