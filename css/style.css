@@ -125,6 +125,11 @@
 /**************************/
 
 .button {
+  display: inline-block;
+  box-sizing: border-box;
+  min-height: 50px;
+  margin: 0;
+  padding: 16px;
   border-color: var(--button-border-color);
   border-radius: 3px;
 
