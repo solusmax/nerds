@@ -703,9 +703,10 @@
 }
 
 .socials__list {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  column-gap: 13px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-shrink: 0;
+  justify-content: center;
   margin: 0;
   padding: 0;
 
@@ -720,6 +721,14 @@
   border-radius: 50%;
 
   background-color: var(--special-grey-light);
+}
+
+.socials__item:not(:nth-child(3n - 2)) {
+  margin-left: 13px;
+}
+
+.socials__item:nth-child(n + 4) {
+  margin-top: 13px;
 }
 
 .socials__item::before {
