@@ -682,7 +682,8 @@
 }
 
 .contacts__write-us-link {
-  width: 220px;
+  width: 100%;
+  max-width: 300px;
 }
 
 /**************************/
