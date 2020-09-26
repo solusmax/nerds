@@ -367,7 +367,7 @@
 .services__list {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  column-gap: 100px;
+  gap: 80px 100px;
   margin: 0;
   padding: 0;
   padding-right: 60px;
