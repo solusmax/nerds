@@ -61,6 +61,10 @@
 /**************************/
 
 :root {
+  --page-width: 1160px;
+  --page-left-padding: 20px;
+  --page-right-padding: 20px;
+
   --basic-black: #000000;
   --basic-black-opacity-30: rgba(0, 0, 0, 0.3);
   --basic-black-opacity-60: rgba(0, 0, 0, 0.6);
@@ -100,7 +104,9 @@
 /**************************/
 
 .page__body {
-  min-width: 1200px;
+  min-width: calc(
+    var(--page-width) + var(--page-left-padding) + var(--page-right-padding)
+  );
 
   font-family: "Roboto", "Arial", sans-serif;
   font-size: 16px;
@@ -117,6 +123,13 @@
   font-weight: 500;
   line-height: 55px;
   text-align: center;
+}
+
+.page__center {
+  width: var(--page-width);
+  margin: 0 auto;
+  padding-left: var(--page-left-padding);
+  padding-right: var(--page-right-padding);
 }
 
 /**************************/
@@ -235,9 +248,7 @@
 .header__wrapper {
   display: grid;
   grid-template-columns: 1fr min-content;
-  width: 1160px;
-  margin: 0 auto;
-  padding: 49px 20px 0;
+  padding-top: 49px;
 }
 
 .header__nav {
@@ -305,9 +316,8 @@
 }
 
 .promo__wrapper {
-  width: 1160px;
-  margin: 0 auto;
-  padding: 80px 0;
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
 
 .promo__slider {
@@ -356,9 +366,8 @@
 /**************************/
 
 .services {
-  width: 1160px;
-  margin: 0 auto;
-  padding: 80px 0;
+  padding-top: 80px;
+  padding-bottom: 80px;
   border-bottom: 2px solid var(--basic-grey);
 
   background-color: var(--basic-white);
@@ -410,9 +419,8 @@
   display: grid;
   grid-template-columns: 1fr 360px;
   column-gap: 20px;
-  width: 1160px;
-  margin: 0 auto;
-  padding: 39px 0 59px;
+  padding-top: 39px;
+  padding-bottom: 59px;
   border-bottom: 2px solid var(--basic-grey);
 
   background-color: var(--basic-white);
@@ -528,9 +536,8 @@
 /**************************/
 
 .partners {
-  width: 1160px;
-  margin: 0 auto;
-  padding: 46px 0 37px;
+  padding-top: 46px;
+  padding-bottom: 37px;
 
   background-color: var(--basic-white);
   border-bottom: 2px solid var(--basic-grey);
@@ -610,11 +617,6 @@
   padding-bottom: 54px;
 }
 
-.contacts__wrapper {
-  width: 1160px;
-  margin: 0 auto;
-}
-
 .contacts__card {
   box-sizing: border-box;
   width: 320px;
@@ -678,10 +680,8 @@
   display: grid;
   grid-template-columns: 260px 1fr;
   column-gap: 140px;
-
-  width: 1160px;
-  margin: 0 auto;
-  padding: 69px 0;
+  padding-top: 69px;
+  padding-bottom: 69px;
 }
 
 .socials__list {
