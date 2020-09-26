@@ -538,7 +538,7 @@
 .partners__list {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  column-gap: 35px;
+  gap: 35px;
   margin: 0;
   padding: 0;
 
@@ -555,7 +555,7 @@
   height: 100%;
 }
 
-.partners__item:not(:last-child)::before {
+.partners__item:not(:last-child):not(:nth-child(4n))::before {
   content: "";
 
   position: absolute;
