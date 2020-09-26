@@ -384,6 +384,10 @@
   list-style: none;
 }
 
+.services__item {
+  padding-right: 40px;
+}
+
 .services__caption {
   margin: 0;
   margin-bottom: 16px;
@@ -396,7 +400,6 @@
 }
 
 .services__description {
-  width: 260px;
   margin: 0;
   margin-bottom: 32px;
   padding: 0;
