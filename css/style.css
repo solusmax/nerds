@@ -119,28 +119,6 @@
   text-align: center;
 }
 
-.page__services,
-.page__about,
-.page__partners {
-  position: relative;
-}
-
-.page__services::before,
-.page__about::before,
-.page__partners::before {
-  content: "";
-
-  position: absolute;
-  left: 1px;
-  bottom: -2px;
-  z-index: 1;
-
-  width: 1158px;
-  height: 2px;
-
-  background-color: var(--basic-grey);
-}
-
 /**************************/
 /***                    ***/
 /**        BUTTON        **/
@@ -381,6 +359,7 @@
   width: 1160px;
   margin: 0 auto;
   padding: 80px 0;
+  border-bottom: 2px solid var(--basic-grey);
 
   background-color: var(--basic-white);
 }
@@ -433,7 +412,8 @@
   column-gap: 20px;
   width: 1160px;
   margin: 0 auto;
-  padding: 41px 0 59px;
+  padding: 39px 0 59px;
+  border-bottom: 2px solid var(--basic-grey);
 
   background-color: var(--basic-white);
 }
@@ -549,9 +529,10 @@
 .partners {
   width: 1160px;
   margin: 0 auto;
-  padding: 48px 0 37px;
+  padding: 46px 0 37px;
 
   background-color: var(--basic-white);
+  border-bottom: 2px solid var(--basic-grey);
 }
 
 .partners__list {
