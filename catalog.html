@@ -9,192 +9,204 @@
   <body class="page__body">
 
     <header class="header page__header">
-      <nav class="header__nav">
-        <p class="logo header__logo">
-          <a class="logo__link" href="index.html">
-            <img class="logo__image" src="./img/logo/logo-nerds.svg" width="160" height="65" alt="Логотип дизайн-студии «Nёrds».">
-          </a>
-        </p>
+      <div class="header__wrapper page__center">
+        <nav class="header__nav">
+          <p class="logo header__logo">
+            <a class="logo__link" href="index.html">
+              <img class="logo__image" src="./img/logo/logo-nerds.svg" width="160" height="65" alt="Логотип дизайн-студии «Nёrds».">
+            </a>
+          </p>
 
-        <ul class="header__menu">
+          <ul class="header__menu">
+            <li class="header__item">
+              <a class="header__link" href="404.html">Студия</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link" href="404.html">Клиенты</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link header__link--current">Магазин</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link" href="404.html">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+
+        <ul class="header__user-nav">
           <li class="header__item">
-            <a class="header__link" href="404.html">Студия</a>
-          </li>
-          <li class="header__item">
-            <a class="header__link" href="404.html">Клиенты</a>
-          </li>
-          <li class="header__item">
-            <a class="header__link header__link--current">Магазин</a>
-          </li>
-          <li class="header__item">
-            <a class="header__link" href="404.html">Контакты</a>
+            <a class="header__link header__icon" href="404.html">Корзина</a>
           </li>
         </ul>
-      </nav>
-
-      <ul class="header__user-nav">
-        <li class="header__item">
-          <a class="header__link header__icon" href="404.html">Корзина</a>
-        </li>
-      </ul>
+      </div>
     </header>
 
     <main class="page__main">
-      <h1 class="page__title">Магазин готовых шаблонов</h1>
+      <div class="page__title-wrapper">
+        <div class="page__center">
+          <h1 class="page__title">Магазин готовых шаблонов</h1>
+        </div>
+      </div>
 
-      <section class="filter">
-        <h2 class="visually-hidden">Фильтр шаблонов</h2>
+      <div class="catalog page__catalog page__center">
+        <section class="filter catalog__filter">
+          <h2 class="visually-hidden">Фильтр шаблонов</h2>
 
-        <!-- Здесь будет форма фильтра -->
+          <!-- Здесь будет форма фильтра -->
 
-      </section>
+        </section>
 
-      <section class="sort">
-        <h2 class="sort__title">Сортировать:</h2>
+        <section class="sort catalog__sort">
+          <h2 class="sort__title">Сортировать:</h2>
 
-        <ul class="sort__by">
-          <li class="sort__by-item">
-            <a class="sort__by-link sort__by-link--current">По цене</a>
-          </li>
-          <li class="sort__by-item">
-            <a class="sort__by-link" href="#">По типу</a>
-          </li>
-          <li class="sort__by-item">
-            <a class="sort__by-link" href="#">По названию</a>
-          </li>
-        </ul>
-
-        <ul class="sort__direction">
-          <li class="sort__direction-item sort__direction-item--current">
-            <a class="sort__direction-link"><span class="visually-hidden">По убыванию</span></a>
-          </li>
-          <li class="sort__direction-item">
-            <a class="sort__direction-link" href="#"><span class="visually-hidden">По возрастанию</span></a>
-          </li>
-        </ul>
-      </section>
-
-      <section class="templates">
-        <h2 class="visually-hidden">Шаблоны</h2>
-
-        <ul class="templates__list">
-          <li class="card">
-            <a class="card__title-link" href="404.html">
-              <h3 class="card__title">Sedona</h3>
-            </a>
-            <p class="card__description">Информационный сайт для туристов</p>
-            <a class="button button--text-white card__price" href="404.html">9 900 ₽</a>
-            <p class="card__image-wrapper">
-              <img class="card__image" src="./img/catalog/card-preview-sedona.jpg" width="358" height="578" alt="Превью шаблона «Sedona».">
-            </p>
-          </li>
-          <li class="card">
-            <a class="card__title-link" href="404.html">
-              <h3 class="card__title">Pink App</h3>
-            </a>
-            <p class="card__description">Продуктовый лендинг приложения для iOS и Android</p>
-            <a class="button button--text-white card__price" href="404.html">9 900 ₽</a>
-            <p class="card__image-wrapper">
-              <img class="card__image" src="./img/catalog/card-preview-pink.jpg" width="358" height="578" alt="Превью шаблона «Pink App».">
-            </p>
-          </li>
-          <li class="card">
-            <a class="card__title-link" href="404.html">
-              <h3 class="card__title">Barbershop</h3>
-            </a>
-            <p class="card__description">Сайт салона красоты. Для мужчин, да.</p>
-            <a class="button button--text-white card__price" href="404.html">9 900 ₽</a>
-            <p class="card__image-wrapper">
-              <img class="card__image" src="./img/catalog/card-preview-barbershop.jpg" width="358" height="578" alt="Превью шаблона «Barbershop».">
-            </p>
-          </li>
-          <li class="card">
-            <a class="card__title-link" href="404.html">
-              <h3 class="card__title">Mishka</h3>
-            </a>
-            <p class="card__description">Интернет-магазин вязаных игрушек</p>
-            <a class="button button--text-white card__price" href="404.html">9 900 ₽</a>
-            <p class="card__image-wrapper">
-              <img class="card__image" src="./img/catalog/card-preview-mishka.jpg" width="358" height="578" alt="Превью шаблона «Mishka».">
-            </p>
-          </li>
-          <li class="card">
-            <a class="card__title-link" href="404.html">
-              <h3 class="card__title">A Plus</h3>
-            </a>
-            <p class="card__description">Лендинг курсов повышения квалификации</p>
-            <a class="button button--text-white card__price" href="404.html">9 900 ₽</a>
-            <p class="card__image-wrapper">
-              <img class="card__image" src="./img/catalog/card-preview-aplus.jpg" width="358" height="578" alt="Превью шаблона «A Plus».">
-            </p>
-          </li>
-          <li class="card">
-            <a class="card__title-link" href="404.html">
-              <h3 class="card__title">Кваст</h3>
-            </a>
-            <p class="card__description">Промо-сайт производителя крафтового кваса</p>
-            <a class="button button--text-white card__price" href="404.html">9 900 ₽</a>
-            <p class="card__image-wrapper">
-              <img class="card__image" src="./img/catalog/card-preview-kvast.jpg" width="358" height="578" alt="Превью шаблона «Кваст».">
-            </p>
-          </li>
-        </ul>
-
-        <nav class="pagination">
-          <ol class="pagination__list">
-            <li class="pagination__item">
-              <a class="button button--grey button--current pagination__link" title="Текущая страница"><span class="visually-hidden">Страница </span>1</a>
+          <ul class="sort__by">
+            <li class="sort__by-item">
+              <a class="sort__by-link sort__by-link--current">По цене</a>
             </li>
-            <li class="pagination__item">
-              <a class="button button--grey pagination__link" href="#"><span class="visually-hidden">Страница </span>2</a>
+            <li class="sort__by-item">
+              <a class="sort__by-link" href="#">По типу</a>
             </li>
-            <li class="pagination__item">
-              <a class="button button--grey pagination__link" href="#"><span class="visually-hidden">Страница </span>3</a>
+            <li class="sort__by-item">
+              <a class="sort__by-link" href="#">По названию</a>
             </li>
-          </ol>
+          </ul>
 
-          <a class="button button--grey pagination__next" href="#">Следующая<span class="visually-hidden"> страница</span></a>
-        </nav>
-      </section>
+          <ul class="sort__direction">
+            <li class="sort__direction-item sort__direction-item--current">
+              <a class="sort__direction-link"><span class="visually-hidden">По убыванию</span></a>
+            </li>
+            <li class="sort__direction-item">
+              <a class="sort__direction-link" href="#"><span class="visually-hidden">По возрастанию</span></a>
+            </li>
+          </ul>
+        </section>
+
+        <section class="templates catalog__templates">
+          <h2 class="visually-hidden">Шаблоны</h2>
+
+          <ul class="templates__list">
+            <li class="card">
+              <a class="card__title-link" href="404.html">
+                <h3 class="card__title">Sedona</h3>
+              </a>
+              <p class="card__description">Информационный сайт для туристов</p>
+              <a class="button button--text-white card__price" href="404.html">9 900 ₽</a>
+              <p class="card__image-wrapper">
+                <img class="card__image" src="./img/catalog/card-preview-sedona.jpg" width="358" height="578" alt="Превью шаблона «Sedona».">
+              </p>
+            </li>
+            <li class="card">
+              <a class="card__title-link" href="404.html">
+                <h3 class="card__title">Pink App</h3>
+              </a>
+              <p class="card__description">Продуктовый лендинг приложения для iOS и Android</p>
+              <a class="button button--text-white card__price" href="404.html">9 900 ₽</a>
+              <p class="card__image-wrapper">
+                <img class="card__image" src="./img/catalog/card-preview-pink.jpg" width="358" height="578" alt="Превью шаблона «Pink App».">
+              </p>
+            </li>
+            <li class="card">
+              <a class="card__title-link" href="404.html">
+                <h3 class="card__title">Barbershop</h3>
+              </a>
+              <p class="card__description">Сайт салона красоты. Для мужчин, да.</p>
+              <a class="button button--text-white card__price" href="404.html">9 900 ₽</a>
+              <p class="card__image-wrapper">
+                <img class="card__image" src="./img/catalog/card-preview-barbershop.jpg" width="358" height="578" alt="Превью шаблона «Barbershop».">
+              </p>
+            </li>
+            <li class="card">
+              <a class="card__title-link" href="404.html">
+                <h3 class="card__title">Mishka</h3>
+              </a>
+              <p class="card__description">Интернет-магазин вязаных игрушек</p>
+              <a class="button button--text-white card__price" href="404.html">9 900 ₽</a>
+              <p class="card__image-wrapper">
+                <img class="card__image" src="./img/catalog/card-preview-mishka.jpg" width="358" height="578" alt="Превью шаблона «Mishka».">
+              </p>
+            </li>
+            <li class="card">
+              <a class="card__title-link" href="404.html">
+                <h3 class="card__title">A Plus</h3>
+              </a>
+              <p class="card__description">Лендинг курсов повышения квалификации</p>
+              <a class="button button--text-white card__price" href="404.html">9 900 ₽</a>
+              <p class="card__image-wrapper">
+                <img class="card__image" src="./img/catalog/card-preview-aplus.jpg" width="358" height="578" alt="Превью шаблона «A Plus».">
+              </p>
+            </li>
+            <li class="card">
+              <a class="card__title-link" href="404.html">
+                <h3 class="card__title">Кваст</h3>
+              </a>
+              <p class="card__description">Промо-сайт производителя крафтового кваса</p>
+              <a class="button button--text-white card__price" href="404.html">9 900 ₽</a>
+              <p class="card__image-wrapper">
+                <img class="card__image" src="./img/catalog/card-preview-kvast.jpg" width="358" height="578" alt="Превью шаблона «Кваст».">
+              </p>
+            </li>
+          </ul>
+
+          <nav class="pagination templates__pagination">
+            <ol class="pagination__list">
+              <li class="pagination__item">
+                <a class="button button--grey button--current pagination__link" title="Текущая страница"><span class="visually-hidden">Страница </span>1</a>
+              </li>
+              <li class="pagination__item">
+                <a class="button button--grey pagination__link" href="#"><span class="visually-hidden">Страница </span>2</a>
+              </li>
+              <li class="pagination__item">
+                <a class="button button--grey pagination__link" href="#"><span class="visually-hidden">Страница </span>3</a>
+              </li>
+            </ol>
+
+            <a class="button button--grey pagination__next" href="#">Следующая<span class="visually-hidden"> страница</span></a>
+          </nav>
+        </section>
+      </div>
     </main>
 
     <footer class="footer page__footer">
       <div class="contacts footer__contacts">
-        <div class="contacts__card">
-          <p class="contacts__title"><b>Nёrds design studio</b></p>
+        <div class="contacts__wrapper page__center">
+          <div class="contacts__card">
+            <p class="contacts__title"><b>Nёrds design studio</b></p>
 
-          <address class="contacts__address">
-            <p class="contacts__paragraph">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-            <p class="contacts__paragraph"><a class="contacts__phone" href="tel:+78122757575">тел. +7 (812) 275-75-75</a></p>
-          </address>
+            <address class="contacts__address">
+              <p class="contacts__street">191186, Санкт-Петербург, <br>ул. Б. Конюшенная, д. 19/8</p>
+              <p class="contacts__phone"><a class="contacts__phone-link" href="tel:+78122757575">тел. +7 (812) 275-75-75</a></p>
+            </address>
+
+            <p class="contacts__write-us"><a class="button contacts__write-us-link" href="404.html">Напишите нам</a></p>
+          </div>
         </div>
-
-        <p class="contacts__write-us"><a class="button" href="404.html">Напишите нам</a></p>
 
         <!-- Здесь будет карта -->
       </div>
 
-      <div class="socials footer__socials">
+      <div class="socials footer__socials page__center">
         <ul class="socials__list">
           <li class="socials__item">
             <a class="socials__link" href="https://vk.com/">
               <span class="visually-hidden">ВКонтакте</span>
             </a>
           </li>
-          <li class="socials__item">
+          <li class="socials__item socials__item--facebook">
             <a class="socials__link" href="https://facebook.com/">
               <span class="visually-hidden">Facebook</span>
             </a>
           </li>
-          <li class="socials__item">
+          <li class="socials__item socials__item--instagram">
             <a class="socials__link" href="https://instagram.com/">
               <span class="visually-hidden">Instagram</span>
             </a>
           </li>
         </ul>
 
-        <p class="socials__tagline"><b>Давайте дружить, это выгодно!</b></p>
-        <p class="socials__discount">Скидка 10% для друзей из социальных сетей.</p>
+        <div class="socials__wrapper">
+          <p class="socials__tagline"><b>Давайте дружить, это выгодно!</b></p>
+          <p class="socials__discount">Скидка 10% для друзей из социальных сетей.</p>
+        </div>
       </div>
     </footer>
 
