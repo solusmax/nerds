@@ -794,33 +794,70 @@
 
 /**************************/
 /***                    ***/
+/**        CATALOG       **/
+/***                    ***/
+/**************************/
+
+.catalog {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  grid-template-rows: 110px 1fr;
+  column-gap: 140px;
+}
+
+.catalog__filter {
+  grid-row: 1 / -1;
+  grid-column: 1 / 2;
+}
+
+.catalog__sort {
+  grid-row: 1;
+  grid-column: 2 / -1;
+  margin-top: 55px;
+}
+.catalog__templates {
+  grid-row: 2;
+  grid-column: 2 / -1;
+}
+
+/**************************/
+/***                    ***/
 /**         SORT         **/
 /***                    ***/
 /**************************/
 
 .sort {
+  display: grid;
+  grid-template-columns: min-content 1fr max-content 40px;
+
   text-transform: uppercase;
 
   background-color: var(--basic-white);
 }
 
 .sort__title {
+  grid-column: 1;
+  margin: 0;
+  padding: 0;
+
   font-weight: 700;
   font-size: 18px;
   line-height: 30px;
 }
 
 .sort__by {
+  display: flex;
+  grid-column: 3;
+  min-width: 320px;
   margin: 0;
   padding: 0;
+  padding-top: 3px;
 
   list-style: none;
 }
-.sort__direction {
-  margin: 0;
-  padding: 0;
 
-  list-style: none;
+.sort__by-item:not(:first-child) {
+  margin-left: 27px;
 }
 
 .sort__by-link {
@@ -846,6 +883,13 @@
   color: inherit;
 }
 
+.sort__direction {
+  grid-column: 4;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
 /**************************/
 /***                    ***/
 /**       TEMPLATES      **/
