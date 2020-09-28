@@ -850,6 +850,7 @@
 
 .sort__by {
   display: flex;
+  flex-wrap: wrap;
   grid-column: 3;
   min-width: 320px;
   margin: 0;
