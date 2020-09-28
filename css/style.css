@@ -118,18 +118,28 @@
   background-color: var(--basic-white);
 }
 
+.page__center {
+  width: var(--page-width);
+  margin: 0 auto;
+  padding-left: var(--page-left-padding);
+  padding-right: var(--page-right-padding);
+}
+
 .page__title {
+  margin: 0;
+  padding: 0;
+  padding-right: 16px;
+  padding-top: 78px;
+  padding-bottom: 108px;
+
   font-size: 55px;
   font-weight: 500;
   line-height: 55px;
   text-align: center;
 }
 
-.page__center {
-  width: var(--page-width);
-  margin: 0 auto;
-  padding-left: var(--page-left-padding);
-  padding-right: var(--page-right-padding);
+.page__title-wrapper {
+  background-color: var(--basic-grey);
 }
 
 /**************************/
