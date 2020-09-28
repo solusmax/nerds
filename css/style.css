@@ -1034,7 +1034,7 @@
 
   font-size: 55px;
   font-weight: 500;
-  line-height: 2.1em;
+  line-height: 2.1;
 }
 
 .not-found__description {
@@ -1042,7 +1042,7 @@
   padding: 0;
 
   font-size: 18px;
-  line-height: 1.4em;
+  line-height: 1.4;
   color: var(--basic-black-light);
 }
 
