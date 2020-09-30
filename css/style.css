@@ -261,7 +261,7 @@
 
 .header__wrapper {
   display: grid;
-  grid-template-columns: max-content 1fr max-content;
+  grid-template-columns: 1fr 1fr;
   padding-top: 49px;
 }
 
@@ -340,6 +340,8 @@
 .header__user-item {
   margin-left: 27px;
   margin-bottom: 10px;
+
+  text-align: right;
 }
 
 .header__user-link {
