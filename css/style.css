@@ -104,9 +104,8 @@
 /**************************/
 
 .page__body {
-  display: flex;
-  flex-direction: column;
-  align-content: center;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
   min-height: 100vh;
   min-width: calc(
     var(--page-width) + var(--page-left-padding) + var(--page-right-padding)
@@ -144,10 +143,6 @@
 
 .page__title-wrapper {
   background-color: var(--basic-grey);
-}
-
-.page__footer {
-  margin-top: auto;
 }
 
 /**************************/
