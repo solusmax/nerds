@@ -371,6 +371,10 @@
 /***                    ***/
 /**************************/
 
+.logo__link {
+  color: var(--basic-black);
+}
+
 .logo__link:visited {
   color: var(--basic-black);
 }
