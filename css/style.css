@@ -373,8 +373,12 @@
 /***                    ***/
 /**************************/
 
-.logo__link:active path {
-  fill: #a6a6a6;
+.logo__link:visited {
+  color: var(--basic-black);
+}
+
+.logo__link:active {
+  color: var(--special-grey);
 }
 
 /**************************/
