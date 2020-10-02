@@ -1016,8 +1016,15 @@
 }
 
 .card:hover > .card__info {
-  opacity: 1;
   z-index: 1;
+
+  opacity: 1;
+}
+
+.card:focus-within > .card__info {
+  z-index: 1;
+
+  opacity: 1;
 }
 
 .card:hover > .card__image-wrapper::before {
