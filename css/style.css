@@ -1021,7 +1021,7 @@
   opacity: 1;
 }
 
-.card:focus-within > .card__info {
+.card__info:focus-within {
   z-index: 1;
 
   opacity: 1;
