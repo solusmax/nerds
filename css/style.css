@@ -1017,6 +1017,7 @@
 
 .card:hover > .card__info {
   opacity: 1;
+  z-index: 1;
 }
 
 .card:hover > .card__image-wrapper::before {
@@ -1028,7 +1029,6 @@
   bottom: -1px;
   left: 0;
   right: 0;
-  z-index: 1;
 
   max-height: 100%;
   padding-left: 53px;
