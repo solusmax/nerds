@@ -521,6 +521,8 @@
   border-radius: 50%;
 
   background-color: var(--basic-white);
+
+  cursor: pointer;
 }
 
 .promo__control-button--current::before {
