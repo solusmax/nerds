@@ -838,13 +838,21 @@
 
 .contacts {
   padding-top: 80px;
-  padding-bottom: 54px;
+}
+
+.contacts__wrapper {
+  position: relative;
+  z-index: 1;
 }
 
 .contacts__card {
+  position: absolute;
+  top: 54px;
+
   box-sizing: border-box;
-  width: 320px;
+  width: 319px;
   padding: 50px;
+  padding-bottom: 47px;
 
   background-color: var(--basic-white);
 }
@@ -892,6 +900,32 @@
 .contacts__write-us-link {
   width: 100%;
   max-width: 300px;
+}
+
+.contacts__map {
+  display: block;
+  width: 100%;
+  min-width: calc(
+    var(--page-width) + var(--page-left-padding) + var(--page-right-padding)
+  );
+  max-width: 1440px;
+  margin: 0 auto;
+
+  object-fit: cover;
+  object-position: center;
+}
+
+.contacts__map-marker {
+  position: absolute;
+  left: 702px;
+  top: 86px;
+  z-index: 1;
+
+  width: 231px;
+  height: 190px;
+
+  background-image: url("../img/map/map-marker.png");
+  background-repeat: no-repeat;
 }
 
 /**************************/
