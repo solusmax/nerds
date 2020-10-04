@@ -350,6 +350,8 @@
 }
 
 .header__user-link {
+  position: relative;
+
   box-sizing: border-box;
   display: inline-block;
   max-width: 100%;
@@ -368,6 +370,20 @@
 
 .header__user-link:active {
   color: var(--basic-black-opacity-30);
+}
+
+.header__user-link--cart::before {
+  content: "";
+
+  position: absolute;
+  left: 2px;
+  top: 7px;
+
+  width: 15px;
+  height: 15px;
+
+  background-image: url("../img/icons/icon-cart.svg");
+  background-repeat: no-repeat;
 }
 
 /**************************/
