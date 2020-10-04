@@ -93,6 +93,7 @@
   --special-grey-foggy: #dbdbdb;
   --special-grey-light: #e1e1e1;
   --special-grey-shadowy: #dfdfdf;
+  --special-grey-silver: #c1c1c1;
   --special-grey-smoky: #f2f2f2;
 
   --button-background-color: var(--basic-red);
@@ -415,7 +416,9 @@
 }
 
 .promo__wrapper {
-  padding-top: 71px;
+  position: relative;
+
+  padding-top: 70px;
   padding-bottom: 80px;
 }
 
@@ -426,11 +429,36 @@
   list-style: none;
 }
 
-.promo__pagination {
-  margin: 0;
-  padding: 0;
+.promo__slide {
+  position: relative;
 
-  list-style: none;
+  display: none;
+}
+
+.promo__slide::before {
+  content: "";
+
+  position: absolute;
+  top: -78px;
+  left: 397px;
+
+  width: 760px;
+  height: 431px;
+
+  background-image: url("../img/landing/promo/slide-1.png");
+  background-repeat: no-repeat;
+}
+
+.promo__slide--current {
+  display: block;
+}
+
+.promo__slide--slide-2::before {
+  background-image: url("../img/landing/promo/slide-2.png");
+}
+
+.promo__slide--slide-3::before {
+  background-image: url("../img/landing/promo/slide-3.png");
 }
 
 .promo__headline {
@@ -444,6 +472,10 @@
   line-height: 1;
 }
 
+.promo__headline--margin-bottom {
+  margin-bottom: 38px;
+}
+
 .promo__description {
   width: 430px;
   margin: 0;
@@ -453,9 +485,55 @@
   color: var(--basic-black-light);
 }
 
+.promo__description--margin-bottom {
+  margin-bottom: 27px;
+}
+
 .promo__more {
   min-width: 240px;
   max-width: 300px;
+}
+
+.promo__controls {
+  position: absolute;
+  bottom: 90px;
+  left: 556px;
+
+  display: flex;
+  flex-wrap: wrap;
+  width: 88px;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.promo__control:not(:last-child) {
+  margin-right: 17px;
+}
+
+.promo__control-button {
+  position: relative;
+
+  width: 18px;
+  height: 18px;
+  border: none;
+  border-radius: 50%;
+
+  background-color: var(--basic-white);
+}
+
+.promo__control-button--current::before {
+  content: "";
+
+  position: absolute;
+  left: 5px;
+  top: 5px;
+
+  width: 4px;
+  height: 4px;
+  border: 2px solid var(--special-grey-silver);
+  border-radius: 50%;
 }
 
 /**************************/

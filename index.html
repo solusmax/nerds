@@ -53,27 +53,33 @@
           <h2 class="visually-hidden">Промо</h2>
 
           <ul class="promo__slider">
-            <li class="promo__slide">
+            <li class="promo__slide promo__slide--current">
               <h3 class="promo__headline">Долго, дорого, скрупулезно.</h3>
               <p class="promo__description">Математически выверенный дизайн <br>для вашего сайта или мобильного приложения.</p>
               <a class="button promo__more" href="404.html">Узнать больше</a>
             </li>
-            <li class="promo__slide">
-              <h3 class="promo__headline">Любим математику как никто другой</h3>
-              <p class="promo__description">Никакого креатива, только математические формулы для расчета идеальных пропорций</p>
+            <li class="promo__slide promo__slide--slide-2">
+              <h3 class="promo__headline promo__headline--margin-bottom">Любим математику как никто другой</h3>
+              <p class="promo__description promo__description--margin-bottom">Никакого креатива, только математические формулы для расчета идеальных пропорций</p>
               <a class="button promo__more" href="404.html">Узнать больше</a>
             </li>
-            <li class="promo__slide">
-              <h3 class="promo__headline">Только ночь, <br>только хардкор</h3>
-              <p class="promo__description">Работать днем, как все? Мы против этого. <br>Ближе к полуночи работа только начинается.</p>
+            <li class="promo__slide promo__slide--slide-3">
+              <h3 class="promo__headline promo__headline--margin-bottom">Только ночь, <br>только хардкор</h3>
+              <p class="promo__description promo__description--margin-bottom">Работать днем, как все? Мы против этого. <br>Ближе к полуночи работа только начинается.</p>
               <a class="button promo__more" href="404.html">Узнать больше</a>
             </li>
           </ul>
 
-          <ol class="promo__pagination">
-            <li class="promo__control"><span class="visually-hidden">Показать слайд 1</span></li>
-            <li class="promo__control"><span class="visually-hidden">Показать слайд 2</span></li>
-            <li class="promo__control"><span class="visually-hidden">Показать слайд 3</span></li>
+          <ol class="promo__controls">
+            <li class="promo__control">
+              <button class="promo__control-button promo__control-button--current" type="button" aria-label="Показать слайд 1"></button>
+            </li>
+            <li class="promo__control">
+              <button class="promo__control-button" type="button" aria-label="Показать слайд 2"></button>
+            </li>
+            <li class="promo__control">
+              <button class="promo__control-button" type="button" aria-label="Показать слайд 3"></button>
+            </li>
           </ol>
         </div>
       </section>
