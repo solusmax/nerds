@@ -1425,6 +1425,9 @@
   display: none;
   justify-content: center;
   align-items: center;
+  min-width: calc(
+    var(--page-width) + var(--page-left-padding) + var(--page-right-padding)
+  );
 
   background-color: var(--basic-black-opacity-30);
 }
