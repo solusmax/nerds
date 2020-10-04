@@ -562,7 +562,34 @@
 }
 
 .services__item {
+  position: relative;
+
+  padding-top: 171px;
   padding-right: 40px;
+}
+
+.services__item::before {
+  content: "";
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 300px;
+  height: 146px;
+
+  background-image: url("../img/landing/services/service-sites.png");
+  background-repeat: no-repeat;
+  background-color: var(--basic-red);
+}
+
+.services__item--apps::before {
+  background-image: url("../img/landing/services/service-apps.png");
+  background-color: var(--basic-green);
+}
+.services__item--power-point::before {
+  background-image: url("../img/landing/services/service-power-point.png");
+  background-color: var(--basic-yellow);
 }
 
 .services__caption {
