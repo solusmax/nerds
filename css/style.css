@@ -445,7 +445,7 @@
 
   background-image: url("../img/landing/promo/slide-1.png");
   background-repeat: no-repeat;
-  background-position: 397px bottom;
+  background-position: right 3px bottom;
 }
 
 .promo__slide--current {
