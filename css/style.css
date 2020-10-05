@@ -65,6 +65,8 @@
   --page-left-padding: 20px;
   --page-right-padding: 20px;
 
+  --modal-width: 960px;
+
   --basic-black: #000000;
   --basic-black-opacity-10: rgba(0, 0, 0, 0.1);
   --basic-black-opacity-30: rgba(0, 0, 0, 0.3);
@@ -1425,7 +1427,7 @@
 .modal__window {
   position: relative;
 
-  width: 960px;
+  width: var(--modal-width);
   max-height: 100%;
   overflow-y: auto;
 
