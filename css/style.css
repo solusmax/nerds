@@ -334,6 +334,8 @@
 .header__logo {
   margin: 0;
   padding: 0;
+
+  line-height: 0;
 }
 
 .header__user-nav {
@@ -424,9 +426,6 @@
 
 .promo__wrapper {
   position: relative;
-
-  padding-top: 70px;
-  padding-bottom: 80px;
 }
 
 .promo__slider {
@@ -440,31 +439,23 @@
   position: relative;
 
   display: none;
-}
-
-.promo__slide::before {
-  content: "";
-
-  position: absolute;
-  top: -78px;
-  left: 397px;
-
-  width: 760px;
-  height: 431px;
+  padding-top: 77px;
+  padding-bottom: 80px;
 
   background-image: url("../img/landing/promo/slide-1.png");
   background-repeat: no-repeat;
+  background-position: 397px bottom;
 }
 
 .promo__slide--current {
   display: block;
 }
 
-.promo__slide--slide-2::before {
+.promo__slide--slide-2 {
   background-image: url("../img/landing/promo/slide-2.png");
 }
 
-.promo__slide--slide-3::before {
+.promo__slide--slide-3 {
   background-image: url("../img/landing/promo/slide-3.png");
 }
 
