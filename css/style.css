@@ -504,7 +504,7 @@
 .promo__controls {
   position: absolute;
   bottom: 90px;
-  left: 556px;
+  left: 50%;
 
   display: flex;
   flex-wrap: wrap;
@@ -513,6 +513,8 @@
   padding: 0;
 
   list-style: none;
+
+  transform: translateX(-50%);
 }
 
 .promo__control:not(:last-child) {
