@@ -920,19 +920,6 @@
   object-position: center;
 }
 
-.contacts__map-marker {
-  position: absolute;
-  left: 702px;
-  top: 86px;
-  z-index: 1;
-
-  width: 231px;
-  height: 190px;
-
-  background-image: url("../img/map/map-marker.png");
-  background-repeat: no-repeat;
-}
-
 /**************************/
 /***                    ***/
 /**       SOCIALS        **/
