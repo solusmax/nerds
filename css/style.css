@@ -1480,13 +1480,14 @@
 .write-us {
   box-sizing: border-box;
 
+  padding-top: 63px;
+  padding-bottom: 84px;
   padding-left: 100px;
   padding-right: 100px;
 }
 
 .write-us__title {
   margin: 0;
-  margin-top: 63px;
   margin-bottom: 37px;
   padding: 0;
 
@@ -1566,5 +1567,4 @@
 
 .write-us__send {
   width: 259px;
-  margin-bottom: 84px;
 }
