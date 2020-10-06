@@ -852,8 +852,10 @@
 
   box-sizing: border-box;
   width: 319px;
+  max-height: 333px;
   padding: 50px;
   padding-bottom: 47px;
+  overflow-y: auto;
 
   background-color: var(--basic-white);
 }
