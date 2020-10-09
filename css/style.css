@@ -845,6 +845,10 @@
   padding-top: 80px;
 }
 
+.contacts--padding-top-none {
+  padding-top: 0;
+}
+
 .contacts__wrapper {
   position: relative;
   z-index: 1;
