@@ -9,7 +9,7 @@
   <body class="page__body">
 
     <header class="header page__header">
-      <div class="header__wrapper page__center">
+      <div class="header__wrapper header__wrapper--padding-bottom page__center">
         <nav class="header__nav">
           <p class="logo header__logo">
             <a class="logo__link" href="index.html">
@@ -39,7 +39,7 @@
 
         <ul class="header__user-nav">
           <li class="header__user-item">
-            <a class="header__user-link" href="404.html">Корзина</a>
+            <a class="header__user-link header__user-link--cart" href="404.html">Корзина</a>
           </li>
         </ul>
       </div>
@@ -67,7 +67,7 @@
           </div>
         </div>
 
-        <!-- Здесь будет карта -->
+        <img class="contacts__map" src="img/map/map.jpg" width="1440" height="416" alt="Адрес дизайн-студии «Nёrds» на ул. Б. Конюшенная, дом 19/8 на карте Санкт-Петербурга.">
       </div>
 
       <div class="socials footer__socials page__center">
@@ -97,10 +97,36 @@
     </footer>
 
     <section class="modal">
-      <h2 class="modal__title">Напишите нам</h2>
+      <div class="modal__window write-us">
+        <h2 class="write-us__title">Напишите нам</h2>
 
-      <!-- Здесь будет форма отправки -->
+        <button class="modal__close" type="button"></button>
 
+        <form class="write-us__form" action="https://echo.htmlacademy.ru" method="POST">
+          <p class="write-us__field-wrapper write-us__name">
+            <label class="write-us__label" for="write-us-name">
+              Ваше имя:
+              <input class="write-us__field" type="text" id="write-us-name" name="user-name" required placeholder="Имя Фамилия">
+            </label>
+          </p>
+
+          <p class="write-us__field-wrapper write-us__email">
+            <label class="write-us__label" for="write-us-email">
+              Ваш email:
+              <input class="write-us__field" type="email" id="write-us-email" name="user-email" required placeholder="email@example.com">
+            </label>
+          </p>
+
+          <p class="write-us__field-wrapper write-us__message">
+            <label class="write-us__label" for="write-us-message">
+              Текст письма:
+              <textarea class="write-us__field write-us__message-field" name="user-message" id="write-us-message" cols="92" rows="7" required placeholder="В свободной форме"></textarea>
+            </label>
+          </p>
+
+          <button class="button write-us__send">Отправить</button>
+        </form>
+      </div>
     </section>
 
   </body>

@@ -276,6 +276,10 @@
   padding-top: 49px;
 }
 
+.header__wrapper--padding-bottom {
+  padding-bottom: 55px;
+}
+
 .header__nav {
   display: grid;
   grid-template-columns: min-content max-content;
