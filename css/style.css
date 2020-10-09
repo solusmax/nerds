@@ -140,8 +140,7 @@
 .page__title {
   margin: 0;
   padding: 0;
-  padding-right: 16px;
-  padding-top: 78px;
+  padding-top: 62px;
   padding-bottom: 108px;
 
   font-size: 55px;
@@ -324,6 +323,7 @@
 }
 
 .header__link--current {
+  padding-bottom: 13px;
   border-bottom: solid 2px var(--basic-red);
 }
 
