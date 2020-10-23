@@ -1138,10 +1138,69 @@
 
 .sort__direction {
   grid-column: 4;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   margin: 0;
   padding: 0;
 
   list-style: none;
+}
+
+.sort__direction-link {
+  display: block;
+  width: 11px;
+  height: 10px;
+
+  color: var(--special-grey);
+
+  opacity: 0.2;
+}
+
+.sort__direction-link:visited {
+  color: var(--special-grey);
+
+  opacity: 0.2;
+}
+
+.sort__direction-link:hover {
+  color: var(--special-grey);
+
+  opacity: 1;
+}
+
+.sort__direction-link:active {
+  color: var(--special-black-bright);
+
+  opacity: 1;
+}
+
+.sort__direction-link--current {
+  color: var(--special-black-bright);
+
+  opacity: 1;
+}
+
+.sort__direction-link--current:visited {
+  color: var(--special-black-bright);
+
+  opacity: 1;
+}
+
+.sort__direction-link--current:hover {
+  color: var(--special-black-bright);
+
+  opacity: 1;
+}
+
+.sort__direction-link--current:active {
+  color: var(--special-black-bright);
+
+  opacity: 1;
+}
+
+.sort__direction-image {
+  display: block;
 }
 
 /**************************/
