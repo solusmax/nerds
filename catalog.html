@@ -56,8 +56,100 @@
         <section class="filter catalog__filter">
           <h2 class="visually-hidden">Фильтр шаблонов</h2>
 
-          <!-- Здесь будет форма фильтра -->
+          <form class="filter__form" action="https://echo.htmlacademy.ru" method="GET">
+            <fieldset class="filter__section filter__section--price">
+              <legend class="filter__caption filter__caption--price">Стоимость:</legend>
 
+              <div class="filter__range">
+                <div class="filter__scale">
+                  <div class="filter__bar" style="
+                    left: 0%;
+                    width: 68%;
+                  "></div>
+                  <!--
+                    ЗАПОЛНЕННАЯ ЧАСТЬ ШКАЛЫ:
+                      left  - левый край заполненной части шкалы
+                      width - ширина заполненной части шкалы
+                   -->
+                </div>
+                <div class="filter__toggles">
+                  <div class="filter__toggle filter__toggle--min" tabindex="0" style="
+                    left: 0%;
+                  "></div>
+                  <!--
+                    ЛЕВЫЙ ТОГГЛ:
+                      left - положение левого тоггла в шкале
+                   -->
+                  <div class="filter__toggle filter__toggle--max" tabindex="0" style="
+                    left: 68%;
+                  "></div>
+                  <!--
+                    ПРАВЫЙ ТОГГЛ:
+                      left - положение правого тоггла в шкале
+                   -->
+                </div>
+              </div>
+
+              <div class="filter__controls">
+                <label class="filter__price-label" for="price-min">
+                  От
+                  <input class="filter__price-input filter__price-input--min" type="number" name="price-min" value="0" min="0" id="price-min">
+                </label>
+                <label class="filter__price-label" for="price-max">
+                  До
+                  <input class="filter__price-input filter__price-input--max" type="number" name="price-max" value="15000" min="0" id="price-max">
+                </label>
+              </div>
+            </fieldset>
+
+            <fieldset class="filter__section filter__section--grid">
+              <legend class="filter__caption filter__caption--grid">Сетка:</legend>
+
+              <ul class="filter__list">
+                <li class="filter__item">
+                  <input class="filter__input filter__input--radio visually-hidden" type="radio" name="template-grid" value="adaptive" id="grid-adaptive" checked>
+                  <label class="filter__input-label filter__input-label--radio" for="grid-adaptive">Адаптивная</label>
+                </li>
+                <li class="filter__item">
+                  <input class="filter__input filter__input--radio visually-hidden" type="radio" name="template-grid" value="fixed" id="grid-fixed">
+                  <label class="filter__input-label filter__input-label--radio" for="grid-fixed">Фиксированная</label>
+                </li>
+                <li class="filter__item">
+                  <input class="filter__input filter__input--radio visually-hidden" type="radio" name="template-grid" value="elastic" id="grid-elastic">
+                  <label class="filter__input-label filter__input-label--radio" for="grid-elastic">Резиновая</label>
+                </li>
+              </ul>
+            </fieldset>
+
+            <fieldset class="filter__section filter__section--features">
+              <legend class="filter__caption filter__caption--features">Особенности:</legend>
+
+              <ul class="filter__list">
+                <li class="filter__item">
+                  <input class="filter__input filter__input--checkbox visually-hidden" type="checkbox" name="feature" value="slider" id="feature-slider" checked>
+                  <label class="filter__input-label filter__input-label--checkbox" for="feature-slider">Слайдер</label>
+                </li>
+                <li class="filter__item">
+                  <input class="filter__input filter__input--checkbox visually-hidden" type="checkbox" name="feature" value="advantages" id="feature-advantages">
+                  <label class="filter__input-label filter__input-label--checkbox" for="feature-advantages">Блок преимуществ</label>
+                </li>
+                <li class="filter__item">
+                  <input class="filter__input filter__input--checkbox visually-hidden" type="checkbox" name="feature" value="news" id="feature-news" checked>
+                  <label class="filter__input-label filter__input-label--checkbox" for="feature-news">Новости</label>
+                </li>
+                <li class="filter__item">
+                  <input class="filter__input filter__input--checkbox visually-hidden" type="checkbox" name="feature" value="gallery" id="feature-gallery">
+                  <label class="filter__input-label filter__input-label--checkbox" for="feature-gallery">Галерея</label>
+                </li>
+                <li class="filter__item">
+                  <input class="filter__input filter__input--checkbox visually-hidden" type="checkbox" name="feature" value="cart" id="feature-cart">
+                  <label class="filter__input-label filter__input-label--checkbox" for="feature-cart">Корзина</label>
+                </li>
+              </ul>
+            </fieldset>
+
+            <button class="button button--grey filter__apply" type="submit">Показать</button>
+          </form>
         </section>
 
         <section class="sort catalog__sort">
