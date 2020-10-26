@@ -1603,6 +1603,12 @@
   background-image: url("../img/icons/radio-on.svg");
 }
 
+.filter__input:focus + .filter__input-label {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: 5px;
+}
+
 .filter__input:hover + .filter__input-label::before {
   opacity: 1;
 }
