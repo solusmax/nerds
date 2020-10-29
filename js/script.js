@@ -56,7 +56,7 @@ writeUsLink.addEventListener('click', function(evt) {
 //////////////////////////
 
 function closeModal() {
-  writeUsModal.classList.remove("modal--shown");
+  writeUsModal.classList.remove('modal--shown');
   writeUsModalWindow.classList.remove('modal__window--error');
 };
 
@@ -70,9 +70,9 @@ writeUsModalBackground.addEventListener('click', function(evt) {
   closeModal();
 });
 
-window.addEventListener("keydown", function(evt) {
+window.addEventListener('keydown', function(evt) {
   if (evt.code === 'Escape') {
-    if (writeUsModal.classList.contains("modal--shown")) {
+    if (writeUsModal.classList.contains('modal--shown')) {
       evt.preventDefault();
       closeModal();
     };
@@ -99,3 +99,54 @@ writeUsForm.addEventListener('submit', function(evt) {
     };
   };
 });
+
+//////////////////////////
+//                      //
+//        СЛАЙДЕР       //
+//                      //
+//////////////////////////
+
+if (document.querySelector('.promo')) {
+  const sliderControl1         = document.querySelector('.promo__control-button--button-1');
+  const sliderControl2         = document.querySelector('.promo__control-button--button-2');
+  const sliderControl3         = document.querySelector('.promo__control-button--button-3');
+  const sliderSlide1           = document.querySelector('.promo__slide--slide-1');
+  const sliderSlide2           = document.querySelector('.promo__slide--slide-2');
+  const silderSlide3           = document.querySelector('.promo__slide--slide-3');
+
+  sliderControl1.addEventListener('click', function(evt) {
+    evt.preventDefault;
+
+    sliderControl1.classList.add('promo__control-button--current');
+    sliderControl2.classList.remove('promo__control-button--current');
+    sliderControl3.classList.remove('promo__control-button--current');
+
+    sliderSlide1.classList.add('promo__slide--current');
+    sliderSlide2.classList.remove('promo__slide--current');
+    silderSlide3.classList.remove('promo__slide--current');
+  });
+
+  sliderControl2.addEventListener('click', function(evt) {
+    evt.preventDefault;
+
+    sliderControl1.classList.remove('promo__control-button--current');
+    sliderControl2.classList.add('promo__control-button--current');
+    sliderControl3.classList.remove('promo__control-button--current');
+
+    sliderSlide1.classList.remove('promo__slide--current');
+    sliderSlide2.classList.add('promo__slide--current');
+    silderSlide3.classList.remove('promo__slide--current');
+  });
+
+  sliderControl3.addEventListener('click', function(evt) {
+    evt.preventDefault;
+
+    sliderControl1.classList.remove('promo__control-button--current');
+    sliderControl2.classList.remove('promo__control-button--current');
+    sliderControl3.classList.add('promo__control-button--current');
+
+    sliderSlide1.classList.remove('promo__slide--current');
+    sliderSlide2.classList.remove('promo__slide--current');
+    silderSlide3.classList.add('promo__slide--current');
+  });
+};
