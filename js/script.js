@@ -1,5 +1,19 @@
 'use strict';
 
+//////////////////////////
+//                      //
+//    УДАЛЕНИЕ NO-JS    //
+//                      //
+//////////////////////////
+
+document.querySelector(".no-js").classList.remove("no-js");
+
+//////////////////////////
+//                      //
+//      ПЕРЕМЕННЫЕ      //
+//                      //
+//////////////////////////
+
 const writeUsLink            = document.querySelector('.contacts__write-us-link');
 
 const writeUsModal           = document.querySelector('.modal');

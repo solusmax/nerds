@@ -945,9 +945,26 @@
   );
   max-width: 100%;
   margin: 0 auto;
+  border: none;
 
   object-fit: cover;
   object-position: center;
+}
+
+.contacts__map--interactive {
+  width: 100%;
+}
+
+.contacts__map--static {
+  display: none;
+}
+
+.no-js .contacts__map--interactive {
+  display: none;
+}
+
+.no-js .contacts__map--static {
+  display: block;
 }
 
 /**************************/
