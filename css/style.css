@@ -748,6 +748,10 @@
   text-align: center;
 }
 
+.about__features-inner {
+  font-weight: inherit;
+}
+
 .about__stats {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -906,6 +910,10 @@
   font-weight: 700;
   line-height: 30px;
   text-transform: uppercase;
+}
+
+.contacts__title-inner {
+  font-weight: inherit;
 }
 
 .contacts__address {
@@ -1073,11 +1081,16 @@
   line-height: 36px;
 }
 
+.socials__tagline-inner {
+  font-weight: inherit;
+}
+
 .socials__discount {
   margin: 0;
   padding: 0;
 
   line-height: 22px;
+  color: var(--special-black-lighten);
 }
 
 /**************************/
@@ -1561,6 +1574,7 @@
   align-items: center;
 
   line-height: 22px;
+  color: var(--basic-black-light);
   text-transform: uppercase;
 }
 
@@ -1918,6 +1932,7 @@
   border-radius: 3px;
 
   font-family: inherit;
+  line-height: 18px;
   color: var(--special-black-lighten-opacity-50);
 }
 
