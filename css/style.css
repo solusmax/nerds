@@ -1272,7 +1272,7 @@
   grid-template-columns: 1fr 1fr;
   grid-auto-rows: min-content;
   column-gap: 40px;
-  row-gap: 31px;
+  row-gap: 32px;
   margin: 0;
   padding: 0;
 
@@ -1280,7 +1280,7 @@
 }
 
 .templates__pagination {
-  margin-top: 54px;
+  margin-top: 55px;
   margin-bottom: 49px;
 }
 
@@ -1416,18 +1416,17 @@
   min-width: 200px;
   max-width: 100%;
   max-height: 100px;
-  margin-bottom: 44px;
+  margin-bottom: 37px;
   overflow: hidden;
 }
 
 .card__image-wrapper {
   position: relative;
 
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
   height: 100%;
-  border: 1px solid var(--basic-black-opacity-10);
+  border-bottom: 1px solid var(--basic-black-opacity-10);
   border-radius: 0 0 5px 5px;
   background-color: var(--special-grey-smoky);
 
@@ -1435,8 +1434,8 @@
 }
 
 .card__image {
-  max-width: 100%;
-  height: auto;
+  width: 360px;
+  height: 578px;
   border-radius: 0 0 5px 5px;
 }
 
