@@ -1730,6 +1730,46 @@
 /***                    ***/
 /**************************/
 
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
+
 .modal {
   position: fixed;
   left: 0;
@@ -1744,6 +1784,14 @@
   min-width: calc(
     var(--page-width) + var(--page-left-padding) + var(--page-right-padding)
   );
+}
+
+.modal__background {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
 
   background-color: var(--basic-black-opacity-30);
 }
@@ -1761,6 +1809,14 @@
 
   background-color: var(--basic-white);
   box-shadow: 0px 20px 40px 0 var(--basic-black-opacity-40);
+
+  animation-name: bounce;
+  animation-duration: 0.5s;
+}
+
+.modal__window--error {
+  animation-name: shake;
+  animation-duration: 0.5s;
 }
 
 .modal__close {
@@ -1857,6 +1913,10 @@
   border-color: var(--basic-red-dark);
 
   color: var(--basic-red-dark);
+}
+
+.write-us__field::placeholder {
+  color: var(--special-grey-murky);
 }
 
 .write-us__name {

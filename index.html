@@ -227,38 +227,40 @@
     </footer>
 
     <section class="modal">
+      <div class="modal__background"></div>
       <div class="modal__window write-us">
         <h2 class="write-us__title">Напишите нам</h2>
-
-        <button class="modal__close" type="button" aria-label="Закрыть"></button>
 
         <form class="write-us__form" action="https://echo.htmlacademy.ru" method="POST">
           <p class="write-us__field-wrapper write-us__name">
             <label class="write-us__label" for="write-us-name">
               Ваше имя:
-              <input class="write-us__field" type="text" id="write-us-name" name="user-name" required placeholder="Имя Фамилия">
+              <input class="write-us__field" type="text" id="write-us-name" name="user-name" placeholder="Имя Фамилия">
             </label>
           </p>
 
           <p class="write-us__field-wrapper write-us__email">
             <label class="write-us__label" for="write-us-email">
               Ваш email:
-              <input class="write-us__field" type="email" id="write-us-email" name="user-email" required placeholder="email@example.com">
+              <input class="write-us__field" type="email" id="write-us-email" name="user-email" placeholder="email@example.com">
             </label>
           </p>
 
           <p class="write-us__field-wrapper write-us__message">
             <label class="write-us__label" for="write-us-message">
               Текст письма:
-              <textarea class="write-us__field write-us__message-field" name="user-message" id="write-us-message" cols="92" rows="7" required placeholder="В свободной форме"></textarea>
+              <textarea class="write-us__field write-us__message-field" name="user-message" id="write-us-message" cols="92" rows="7" placeholder="В свободной форме"></textarea>
             </label>
           </p>
 
           <button class="button write-us__send">Отправить</button>
         </form>
+
+        <button class="modal__close" type="button" aria-label="Закрыть"></button>
       </div>
     </section>
 
     <script src="js/focus-visible.min.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>
