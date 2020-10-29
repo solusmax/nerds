@@ -524,7 +524,7 @@
 
 .promo__controls {
   position: absolute;
-  bottom: 90px;
+  bottom: 96px;
   left: 50%;
 
   display: flex;
@@ -532,6 +532,8 @@
   width: 88px;
   margin: 0;
   padding: 0;
+
+  line-height: 0;
 
   list-style: none;
 
