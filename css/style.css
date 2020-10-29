@@ -677,6 +677,10 @@
   line-height: 1;
 }
 
+.about__headline-inner {
+  font-weight: inherit;
+}
+
 .about__description {
   width: 675px;
   margin: 0;
