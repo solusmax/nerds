@@ -1452,7 +1452,7 @@
 
 .filter__section {
   margin: 0;
-  margin-bottom: 26px;
+  margin-bottom: 28px;
   padding: 0;
   border: none;
 }
@@ -1462,11 +1462,11 @@
 }
 
 .filter__section--features {
-  margin-bottom: 30px;
+  margin-bottom: 31px;
 }
 
 .filter__caption {
-  margin-bottom: 15px;
+  margin-bottom: 13px;
 
   font-size: 18px;
   font-weight: 700;
@@ -1476,6 +1476,10 @@
 
 .filter__caption--price {
   margin-bottom: 48px;
+}
+
+.filter__caption--features {
+  margin-bottom: 14px;
 }
 
 .filter__range {
