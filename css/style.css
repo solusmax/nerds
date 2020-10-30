@@ -69,6 +69,10 @@
   outline-color: var(--basic-black);
 }
 
+.no-js :focus {
+  outline-color: var(--basic-black);
+}
+
 /**************************/
 /***                    ***/
 /**      ПЕРЕМЕННЫЕ      **/
@@ -1712,6 +1716,12 @@
 }
 
 .filter__input.focus-visible + .filter__input-label {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: 5px;
+}
+
+.no-js .filter__input:focus + .filter__input-label {
   outline: thin dotted;
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: 5px;
