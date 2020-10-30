@@ -948,6 +948,10 @@
   color: var(--special-grey-dark);
 }
 
+.contacts__address--margin-bottom-none {
+  margin-bottom: 0;
+}
+
 .contacts__street {
   margin: 0;
   margin-bottom: 18px;
