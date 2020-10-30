@@ -444,6 +444,10 @@
   color: var(--special-grey);
 }
 
+.logo__link--none:active {
+  color: var(--basic-black);
+}
+
 /**************************/
 /***                    ***/
 /**        PROMO         **/
