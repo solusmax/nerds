@@ -182,9 +182,9 @@
 /**************************/
 
 .button {
+  box-sizing: border-box;
   display: inline-block;
   vertical-align: baseline;
-  box-sizing: border-box;
   margin: 0;
   padding: 16px;
   border: none;
@@ -326,6 +326,7 @@
 
 .header__link {
   display: inline-block;
+  vertical-align: baseline;
   max-width: 400px;
   margin-bottom: 10px;
   margin-left: 23px;
@@ -393,6 +394,7 @@
 
   box-sizing: border-box;
   display: inline-block;
+  vertical-align: baseline;
   max-width: 100%;
   padding-left: 42px;
 
@@ -761,8 +763,8 @@
 }
 
 .about__column {
-  display: grid;
   box-sizing: border-box;
+  display: grid;
   max-width: 120px;
   padding-right: 10px;
 }
@@ -1619,8 +1621,9 @@
 }
 
 .filter__input-label {
-  display: inline-block;
   box-sizing: border-box;
+  display: inline-block;
+  vertical-align: baseline;
   height: 100%;
   padding-left: 36px;
 
@@ -1892,7 +1895,6 @@
 
 .write-us {
   box-sizing: border-box;
-
   padding-top: 63px;
   padding-bottom: 84px;
   padding-left: 100px;
