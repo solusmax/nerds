@@ -762,6 +762,11 @@
   padding: 0;
 }
 
+.about__image {
+  max-width: 100%;
+  height: auto;
+}
+
 .about__features {
   margin: 0;
   margin-bottom: 30px;
@@ -865,6 +870,9 @@
 
 .partners__logo {
   position: relative;
+
+  max-width: 100%;
+  height: auto;
 }
 
 .partners__logo--html-academy {
@@ -984,6 +992,7 @@
     var(--page-width) + var(--page-left-padding) + var(--page-right-padding)
   );
   max-width: 100%;
+  min-height: 416px;
   margin: 0 auto;
   border: none;
 
@@ -1463,6 +1472,7 @@
   margin: 0;
   padding: 0;
   height: 100%;
+  min-height: 577px;
   border-bottom: 1px solid var(--basic-black-opacity-10);
   border-radius: 0 0 5px 5px;
   background-color: var(--special-grey-smoky);
@@ -1471,9 +1481,8 @@
 }
 
 .card__image {
-  width: 360px;
-  height: 578px;
-  min-height: 578px;
+  max-width: 100%;
+  height: auto;
   border-radius: 0 0 5px 5px;
 }
 
