@@ -1177,11 +1177,13 @@
   display: flex;
   flex-wrap: wrap;
   grid-column: 3;
-  min-width: 320px;
+  min-width: 300px;
   max-width: 530px;
   margin: 0;
   padding: 0;
   padding-top: 3px;
+  padding-right: 20px;
+  padding-left: 20px;
 
   list-style: none;
 }
