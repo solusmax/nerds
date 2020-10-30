@@ -117,6 +117,7 @@
   --special-grey-dim: #d5d5d5;
   --special-grey-foggy: #dbdbdb;
   --spacial-grey-gainsborough: #d7dcde;
+  --special-grey-map: #e5e3df;
   --special-grey-light: #e1e1e1;
   --special-grey-murky: #d7dcdf;
   --special-grey-shadowy: #dfdfdf;
@@ -965,6 +966,7 @@
 
   object-fit: cover;
   object-position: center;
+  background-color: var(--special-grey-map);
 }
 
 .contacts__map--interactive {
@@ -1446,6 +1448,7 @@
 .card__image {
   width: 360px;
   height: 578px;
+  min-height: 578px;
   border-radius: 0 0 5px 5px;
 }
 
