@@ -480,6 +480,10 @@
   background-position: right 3px bottom;
 }
 
+.no-js .promo__slide {
+  display: block;
+}
+
 .promo__slide--current {
   display: block;
 }
