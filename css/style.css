@@ -1933,7 +1933,6 @@
 
 .write-us__title {
   margin: 0;
-  margin-bottom: 37px;
   padding: 0;
 
   font-size: 45px;
@@ -1948,7 +1947,23 @@
 
 .write-us__field-wrapper {
   margin: 0;
+  margin-top: 37px;
   padding: 0;
+}
+
+.write-us__field-wrapper--name {
+  flex-grow: 1;
+  margin-right: 40px;
+}
+
+.write-us__field-wrapper--email {
+  flex-grow: 1;
+}
+
+.write-us__field-wrapper--message {
+  width: 100%;
+  margin-top: 34px;
+  margin-bottom: 47px;
 }
 
 .write-us__label {
@@ -1993,22 +2008,7 @@
   color: var(--special-grey-murky);
 }
 
-.write-us__name {
-  flex-grow: 1;
-  margin-right: 40px;
-}
-
-.write-us__email {
-  flex-grow: 1;
-}
-
-.write-us__message {
-  width: 100%;
-  margin-top: 34px;
-  margin-bottom: 47px;
-}
-
-.write-us__message-field {
+.write-us__field--message {
   height: 86px;
   min-height: 86px;
 
