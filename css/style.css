@@ -1483,6 +1483,10 @@
   padding-top: 55px;
 }
 
+.filter__form {
+  margin-bottom: 30px;
+}
+
 .filter__section {
   margin: 0;
   margin-bottom: 28px;
