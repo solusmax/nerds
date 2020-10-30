@@ -426,6 +426,19 @@
   background-repeat: no-repeat;
 }
 
+.header__user-link--current {
+  padding-bottom: 13px;
+  border-bottom: solid 2px var(--basic-red);
+}
+
+.header__user-link--current:hover {
+  color: inherit;
+}
+
+.header__user-link--current:active {
+  color: inherit;
+}
+
 /**************************/
 /***                    ***/
 /**         LOGO         **/
