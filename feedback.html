@@ -2,7 +2,7 @@
 <html class="page no-js" lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>Nёrds • Главная страница</title>
+    <title>Nёrds • Напишите нам</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -45,145 +45,39 @@
     </header>
 
     <main class="page__main">
-      <h1 class="visually-hidden">Дизайн-студия «Nёrds»</h1>
-
-      <section class="promo page__promo">
-        <div class="promo__wrapper page__center">
-          <h2 class="visually-hidden">Промо</h2>
-
-          <ul class="promo__slider">
-            <li class="promo__slide promo__slide--slide-1 promo__slide--current">
-              <h3 class="promo__headline">Долго, дорого, скрупулезно.</h3>
-              <p class="promo__description">Математически выверенный дизайн <br>для вашего сайта или мобильного приложения.</p>
-              <a class="button promo__more" href="404.html">Узнать больше</a>
-            </li>
-            <li class="promo__slide promo__slide--slide-2">
-              <h3 class="promo__headline promo__headline--margin-bottom">Любим математику как никто другой</h3>
-              <p class="promo__description promo__description--margin-bottom">Никакого креатива, только математические формулы для расчета идеальных пропорций</p>
-              <a class="button promo__more" href="404.html">Узнать больше</a>
-            </li>
-            <li class="promo__slide promo__slide--slide-3">
-              <h3 class="promo__headline promo__headline--margin-bottom">Только ночь, <br>только хардкор</h3>
-              <p class="promo__description promo__description--margin-bottom">Работать днем, как все? Мы против этого. <br>Ближе к полуночи работа только начинается.</p>
-              <a class="button promo__more" href="404.html">Узнать больше</a>
-            </li>
-          </ul>
-
-          <ol class="promo__controls">
-            <li class="promo__control">
-              <button class="promo__control-button promo__control-button--button-1 promo__control-button--current" type="button" aria-label="Показать слайд 1"></button>
-            </li>
-            <li class="promo__control">
-              <button class="promo__control-button promo__control-button--button-2" type="button" aria-label="Показать слайд 2"></button>
-            </li>
-            <li class="promo__control">
-              <button class="promo__control-button promo__control-button--button-3" type="button" aria-label="Показать слайд 3"></button>
-            </li>
-          </ol>
-        </div>
-      </section>
-
-      <div class="page__center">
-        <section class="services page__services">
-          <h2 class="visually-hidden">Услуги</h2>
-
-          <ul class="services__list">
-            <li class="services__item">
-              <h3 class="services__caption">Веб-сайты</h3>
-              <p class="services__description">Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-              <a class="button services__order" href="404.html">Заказать</a>
-            </li>
-            <li class="services__item services__item--apps">
-              <h3 class="services__caption">Приложения</h3>
-              <p class="services__description">Покорите топ-10 приложений <br>в AppStore и Google Play</p>
-              <a class="button button--green services__order" href="404.html">Заказать</a>
-            </li>
-            <li class="services__item services__item--power-point">
-              <h3 class="services__caption">Презентации</h3>
-              <p class="services__description">Вы даже не подозреваете, насколько вы изумительны!</p>
-              <a class="button button--yellow services__order" href="404.html">Заказать</a>
-            </li>
-          </ul>
-        </section>
+      <div class="page__title-wrapper">
+        <h1 class="page__title page__center">Напишите нам</h1>
       </div>
+      <div class="write-us page__center">
+        <form class="write-us__form" action="https://echo.htmlacademy.ru" method="POST">
+          <p class="write-us__field-wrapper write-us__name">
+            <label class="write-us__label" for="write-us-name">
+              Ваше имя:
+              <input class="write-us__field" type="text" id="write-us-name" name="user-name" placeholder="Имя Фамилия" required>
+            </label>
+          </p>
 
-      <div class="page__center">
-        <section class="about page__about">
-          <div class="about__wrapper">
-            <h2 class="visually-hidden">О нас</h2>
+          <p class="write-us__field-wrapper write-us__email">
+            <label class="write-us__label" for="write-us-email">
+              Ваш email:
+              <input class="write-us__field" type="email" id="write-us-email" name="user-email" placeholder="email@example.com" required>
+            </label>
+          </p>
 
-            <p class="about__headline"><b class="about__headline-inner">Мы — маленькая, но гордая дизайн-студия из Краснодара.</b></p>
+          <p class="write-us__field-wrapper write-us__message">
+            <label class="write-us__label" for="write-us-message">
+              Текст письма:
+              <textarea class="write-us__field write-us__message-field" name="user-message" id="write-us-message" cols="92" rows="7" placeholder="В свободной форме" required></textarea>
+            </label>
+          </p>
 
-            <p class="about__description">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
-
-            <p class="about__list-title">Выполняем заказы на разработку:</p>
-
-            <ul class="about__list">
-              <li class="about__item">Веб-сайтов любой сложности</li>
-              <li class="about__item">Мобильных приложений для iOS и Android</li>
-              <li class="about__item">Слайдшоу и видео для корпоративных презентаций</li>
-            </ul>
-          </div>
-
-          <div class="about__wrapper">
-            <p class="about__image-wrapper">
-              <img class="about__image" src="./img/landing/about/about-nerds.png" width="360" height="208" alt="Логотип «Nёrds».">
-            </p>
-
-            <p class="about__features"><b class="about__features-inner">С 2004 года любим точность во всем:</b></p>
-
-            <dl class="about__stats">
-              <div class="about__column">
-                <dt class="about__property">Уровень самоотдачи</dt>
-                <dd class="about__value">146<span class="about__percentage">%</span></dd>
-              </div>
-
-              <div class="about__column">
-                <dt class="about__property">Соблюдение сроков</dt>
-                <dd class="about__value">100<span class="about__percentage">%</span></dd>
-              </div>
-
-              <div class="about__column">
-                <dt class="about__property">Минимальная предоплата</dt>
-                <dd class="about__value">50<span class="about__percentage">%</span></dd>
-              </div>
-            </dl>
-          </div>
-        </section>
-      </div>
-
-      <div class="page__center">
-        <section class="partners page__partners">
-          <h2 class="visually-hidden">Партнёры</h2>
-
-          <ul class="partners__list">
-            <li class="partners__item">
-              <a class="partners__link" href="https://htmlacademy.ru/intensive/htmlcss">
-                <img class="partners__logo partners__logo--html-academy" src="./img/landing/partners/logo-html-academy.svg" width="199" height="68" alt="Логотип «HTML Academy».">
-              </a>
-            </li>
-            <li class="partners__item">
-              <a class="partners__link" href="404.html">
-                <img class="partners__logo" src="./img/landing/partners/logo-borodinski.png" width="209" height="90" alt="Логотип «Барбершоп Borodinski».">
-              </a>
-            </li>
-            <li class="partners__item">
-              <a class="partners__link" href="404.html">
-                <img class="partners__logo partners__logo--pink" src="./img/landing/partners/logo-pink.png" width="185" height="52" alt="Логотип «Pink».">
-              </a>
-            </li>
-            <li class="partners__item">
-              <a class="partners__link" href="404.html">
-                <img class="partners__logo partners__logo--mishka" src="./img/landing/partners/logo-mishka.png" width="173" height="84" alt="Логотип «Mishka».">
-              </a>
-            </li>
-          </ul>
-        </section>
+          <button class="button write-us__send">Отправить</button>
+        </form>
       </div>
     </main>
 
     <footer class="footer page__footer">
-      <div class="contacts footer__contacts">
+      <div class="contacts contacts--padding-top-none footer__contacts">
         <div class="contacts__wrapper page__center">
           <div class="contacts__card">
             <p class="contacts__title"><b class="contacts__title-inner">Nёrds design studio</b></p>

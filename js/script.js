@@ -71,7 +71,7 @@ writeUsLink.addEventListener('click', function(evt) {
 
 function closeModal() {
   writeUsModal.classList.remove('modal--shown');
-  writeUsModalWindow.classList.remove('modal__window--error');
+  writeUsModalWindow.classList.remove('write-us--error');
 };
 
 writeUsModalClose.addEventListener('click', function(evt) {
@@ -103,9 +103,9 @@ writeUsForm.addEventListener('submit', function(evt) {
   if (!writeUsName.value || !writeUsEmail.value || !writeUsMessage.value) {
     evt.preventDefault();
 
-    writeUsModalWindow.classList.remove('modal__window--error');
+    writeUsModalWindow.classList.remove('write-us--error');
     void writeUsModalWindow.offsetWidth;
-    writeUsModalWindow.classList.add('modal__window--error');
+    writeUsModalWindow.classList.add('write-us--error');
   } else {
     if (isStorageSupport) {
       localStorage.setItem('name', writeUsName.value);

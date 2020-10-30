@@ -161,8 +161,6 @@
 }
 
 .page__title {
-  margin: 0;
-  padding: 0;
   padding-top: 62px;
   padding-bottom: 108px;
 
@@ -1873,11 +1871,6 @@
   animation-duration: 0.5s;
 }
 
-.modal__window--error {
-  animation-name: shake;
-  animation-duration: 0.5s;
-}
-
 .modal__close {
   position: absolute;
   top: 78px;
@@ -1914,6 +1907,11 @@
   padding-bottom: 84px;
   padding-left: 100px;
   padding-right: 100px;
+}
+
+.write-us--error {
+  animation-name: shake;
+  animation-duration: 0.5s;
 }
 
 .write-us__title {
