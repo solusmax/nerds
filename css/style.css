@@ -583,6 +583,10 @@
   cursor: pointer;
 }
 
+.promo__control-button:active {
+  background-color: var(--special-grey-smoky);
+}
+
 .promo__control-button--current::before {
   content: "";
 
@@ -1596,6 +1600,8 @@
 
 .filter__toggle:active {
   cursor: grabbing;
+
+  background-color: var(--special-grey-smoky);
 }
 
 .filter__toggle--min {
