@@ -1694,6 +1694,7 @@
   border: none;
   border-radius: 3px;
 
+  line-height: 18px;
   text-align: center;
 
   background-color: var(--basic-grey);
