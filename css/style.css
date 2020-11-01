@@ -980,6 +980,14 @@
   text-decoration: none;
 }
 
+.contacts__phone-link:hover {
+  color: var(--special-grey-almost);
+}
+
+.contacts__phone-link:active {
+  color: var(--special-black-bright);
+}
+
 .contacts__write-us {
   margin: 0;
   padding: 0;
