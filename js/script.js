@@ -121,46 +121,30 @@ writeUsForm.addEventListener('submit', function(evt) {
 //////////////////////////
 
 if (document.querySelector('.promo')) {
-  const sliderControl1         = document.querySelector('.promo__control-button--button-1');
-  const sliderControl2         = document.querySelector('.promo__control-button--button-2');
-  const sliderControl3         = document.querySelector('.promo__control-button--button-3');
-  const sliderSlide1           = document.querySelector('.promo__slide--slide-1');
-  const sliderSlide2           = document.querySelector('.promo__slide--slide-2');
-  const silderSlide3           = document.querySelector('.promo__slide--slide-3');
+  const sliderControls         = document.querySelectorAll('.promo__control-button');
+  const sliderSlides           = document.querySelectorAll('.promo__slide');
 
-  sliderControl1.addEventListener('click', function(evt) {
-    evt.preventDefault;
+  function clearActiveClassSlide() {
+    for (let i = 0; i < sliderSlides.length; i += 1) {
+      sliderSlides[i].classList.remove('promo__slide--current')
+    };
+  };
 
-    sliderControl1.classList.add('promo__control-button--current');
-    sliderControl2.classList.remove('promo__control-button--current');
-    sliderControl3.classList.remove('promo__control-button--current');
+  function clearActiveClassPagination() {
+    for (let i = 0; i < sliderControls.length; i += 1) {
+      sliderControls[i].classList.remove('promo__control-button--current')
+    };
+  };
 
-    sliderSlide1.classList.add('promo__slide--current');
-    sliderSlide2.classList.remove('promo__slide--current');
-    silderSlide3.classList.remove('promo__slide--current');
-  });
+  for (let i = 0; i < sliderControls.length; i += 1) {
+    sliderControls[i].addEventListener('click', function(evt) {
+      evt.preventDefault();
 
-  sliderControl2.addEventListener('click', function(evt) {
-    evt.preventDefault;
+      clearActiveClassSlide();
+      clearActiveClassPagination();
 
-    sliderControl1.classList.remove('promo__control-button--current');
-    sliderControl2.classList.add('promo__control-button--current');
-    sliderControl3.classList.remove('promo__control-button--current');
-
-    sliderSlide1.classList.remove('promo__slide--current');
-    sliderSlide2.classList.add('promo__slide--current');
-    silderSlide3.classList.remove('promo__slide--current');
-  });
-
-  sliderControl3.addEventListener('click', function(evt) {
-    evt.preventDefault;
-
-    sliderControl1.classList.remove('promo__control-button--current');
-    sliderControl2.classList.remove('promo__control-button--current');
-    sliderControl3.classList.add('promo__control-button--current');
-
-    sliderSlide1.classList.remove('promo__slide--current');
-    sliderSlide2.classList.remove('promo__slide--current');
-    silderSlide3.classList.add('promo__slide--current');
-  });
+      sliderControls[i].classList.add('promo__control-button--current');
+      sliderSlides[i].classList.add('promo__slide--current');
+    });
+  };
 };
