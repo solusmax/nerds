@@ -892,15 +892,15 @@
   left: 3px;
 }
 
-.partners__logo {
+.partners__link {
   opacity: 0.2;
 }
 
-.partners__logo:hover {
+.partners__link:hover {
   opacity: 1;
 }
 
-.partners__logo:active {
+.partners__link:active {
   opacity: 0.1;
 }
 
