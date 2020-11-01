@@ -2,14 +2,14 @@
 <html class="page no-js" lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>Nёrds • Страница не найдена</title>
+    <title>Nёrds • Напишите нам</title>
     <link rel="stylesheet" href="css/normalize.min.css">
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body class="page__body">
 
     <header class="header page__header">
-      <div class="header__wrapper header__wrapper--padding-bottom page__center">
+      <div class="header__wrapper page__center">
         <nav class="header__nav">
           <p class="logo header__logo">
             <a class="logo__link" href="index.html">
@@ -44,25 +44,48 @@
       </div>
     </header>
 
-    <main class="not-found page__main page__center">
-      <div class="not-found__wrapper">
-        <h1 class="not-found__title">Страница не найдена</h1>
-        <p class="not-found__description">Возможно она была, но исчезла из-за катастрофически быстрого сжатия под воздействием гравитационных сил. Но это ещё не точно.</p>
+    <main class="page__main">
+      <div class="page__title-wrapper">
+        <h1 class="page__title page__center">Напишите нам</h1>
+      </div>
+      <div class="write-us page__center">
+        <form class="write-us__form" action="https://echo.htmlacademy.ru" method="POST">
+          <p class="write-us__field-wrapper write-us__field-wrapper--name">
+            <label class="write-us__label" for="write-us-name">
+              Ваше имя:
+              <input class="write-us__field" type="text" id="write-us-name" name="user-name" placeholder="Имя Фамилия" required>
+            </label>
+          </p>
+
+          <p class="write-us__field-wrapper write-us__field-wrapper--email">
+            <label class="write-us__label" for="write-us-email">
+              Ваш email:
+              <input class="write-us__field" type="email" id="write-us-email" name="user-email" placeholder="email@example.com" required>
+            </label>
+          </p>
+
+          <p class="write-us__field-wrapper write-us__field-wrapper--message">
+            <label class="write-us__label" for="write-us-message">
+              Текст письма:
+              <textarea class="write-us__field write-us__field--message" name="user-message" id="write-us-message" cols="92" rows="7" placeholder="В свободной форме" required></textarea>
+            </label>
+          </p>
+
+          <button class="button write-us__send">Отправить</button>
+        </form>
       </div>
     </main>
 
     <footer class="footer page__footer">
-      <div class="contacts footer__contacts">
+      <div class="contacts contacts--padding-top-none footer__contacts">
         <div class="contacts__wrapper page__center">
           <div class="contacts__card">
             <p class="contacts__title"><b class="contacts__title-inner">Nёrds design studio</b></p>
 
-            <address class="contacts__address">
+            <address class="contacts__address contacts__address--margin-bottom-none">
               <p class="contacts__street">191186, Санкт-Петербург, <br>ул. Б. Конюшенная, д. 19/8</p>
               <p class="contacts__phone"><a class="contacts__phone-link" href="tel:+78122757575">тел. +7 (812) 275-75-75</a></p>
             </address>
-
-            <p class="contacts__write-us"><a class="button contacts__write-us-link" href="feedback.html">Напишите нам</a></p>
           </div>
         </div>
 
@@ -95,42 +118,6 @@
         </div>
       </div>
     </footer>
-
-    <section class="modal">
-      <div class="modal__background"></div>
-        <!-- modal__background не сделать псевдоэлементом,
-             потому что к нему нужно обращаться в JS -->
-      <div class="modal__window write-us">
-        <h2 class="write-us__title">Напишите нам</h2>
-
-        <form class="write-us__form" action="https://echo.htmlacademy.ru" method="POST">
-          <p class="write-us__field-wrapper write-us__field-wrapper--name">
-            <label class="write-us__label" for="write-us-name">
-              Ваше имя:
-              <input class="write-us__field" type="text" id="write-us-name" name="user-name" placeholder="Имя Фамилия">
-            </label>
-          </p>
-
-          <p class="write-us__field-wrapper write-us__field-wrapper--email">
-            <label class="write-us__label" for="write-us-email">
-              Ваш email:
-              <input class="write-us__field" type="email" id="write-us-email" name="user-email" placeholder="email@example.com">
-            </label>
-          </p>
-
-          <p class="write-us__field-wrapper write-us__field-wrapper--message">
-            <label class="write-us__label" for="write-us-message">
-              Текст письма:
-              <textarea class="write-us__field write-us__field--message" name="user-message" id="write-us-message" cols="92" rows="7" placeholder="В свободной форме"></textarea>
-            </label>
-          </p>
-
-          <button class="button write-us__send">Отправить</button>
-        </form>
-
-        <button class="modal__close" type="button" aria-label="Закрыть"></button>
-      </div>
-    </section>
 
     <script src="js/focus-visible.min.js"></script>
     <script src="js/script.min.js"></script>
