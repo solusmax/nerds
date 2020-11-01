@@ -457,12 +457,8 @@
   color: var(--basic-black);
 }
 
-.logo__link:active {
+.logo__link[href]:active {
   color: var(--special-grey);
-}
-
-.logo__link--none:active {
-  color: var(--basic-black);
 }
 
 /**************************/
