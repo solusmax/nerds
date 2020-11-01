@@ -127,6 +127,7 @@
   --special-grey-shadowy: #dfdfdf;
   --special-grey-silver: #c1c1c1;
   --special-grey-smoky: #f2f2f2;
+  --special-red-light: #fd8587;
 
   --button-background-color: var(--basic-red);
   --button-border-color: var(--basic-red-dark);
@@ -2040,7 +2041,12 @@
 .write-us__field:not(:placeholder-shown):invalid {
   border-color: var(--basic-red-dark);
 
+  outline-color: var(--basic-red-dark);
   color: var(--basic-red-dark);
+}
+
+.write-us__field:not(:placeholder-shown):invalid:not(:focus) {
+  border-color: var(--special-red-light);
 }
 
 .write-us__field::placeholder {
