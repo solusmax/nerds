@@ -1,7 +1,15 @@
 # Личный проект «Нёрдс»
 
-* Студент: [Максим Солус](https://htmlacademy.ru/profile/solusmax).
-* Наставник: [Алёна Сиприкова](https://htmlacademy.ru/profile/asiprikova).
+- Студент: [Максим Солус](https://htmlacademy.ru/profile/id1483111).
+- Наставник: [Алёна Сиприкова](https://htmlacademy.ru/profile/id549115).
+
+---
+
+- Desktop only
+- Семантическая вёрстка
+- Доступность
+- Флексы, гриды
+- БЭМ (именование классов)
 
 ---
 
