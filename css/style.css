@@ -999,11 +999,11 @@
 }
 
 .contacts__phone-link:hover {
-  color: var(--special-grey-almost);
+  color: var(--basic-red);
 }
 
 .contacts__phone-link:active {
-  color: var(--special-black-bright);
+  color: var(--basic-black-opacity-30);
 }
 
 .contacts__write-us {
