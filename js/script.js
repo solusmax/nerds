@@ -121,8 +121,8 @@ writeUsForm.addEventListener('submit', function(evt) {
 //////////////////////////
 
 if (document.querySelector('.promo')) {
-  const sliderControls         = document.querySelectorAll('.promo__control-button');
-  const sliderSlides           = document.querySelectorAll('.promo__slide');
+  const sliderControls = document.querySelectorAll('.promo__control-button');
+  const sliderSlides   = document.querySelectorAll('.promo__slide');
 
   function clearActiveClassSlide() {
     for (let i = 0; i < sliderSlides.length; i += 1) {
